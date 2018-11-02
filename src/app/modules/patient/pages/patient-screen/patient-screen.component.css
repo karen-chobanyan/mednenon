@@ -1,0 +1,272 @@
+.dashboard-info {
+    background: #fff;
+    margin-bottom: 45px;
+}
+.dashboard-info .patient-info{
+    padding: 15px 0;
+    background: #fff;
+    border-bottom: 2px solid #e3e3e3;
+}
+.dashboard-i{
+    max-width: 350px !important;
+    padding: 0 15px;
+}
+.expert_thumb {
+    width:80px;
+    height:80px;
+    border-radius:8px;
+}
+.dashboard-info .patient-info img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.dashboard-info .patient-info p{
+    margin: 0;
+}
+.patient-violet-info img{
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+}
+.patient-s{
+    position: fixed;
+    left: 0;
+    width: 64px;
+    height: 100%;
+}
+.patient-d{
+    padding-left: 50px;
+}
+.patient-dashboard-info{
+    margin-bottom: 35px;
+}
+.patient-dashboard-info p{
+    cursor: pointer;
+    padding: 15px;
+    margin: 0;
+}
+.patient-dashboard-info p span{
+    color: #424242;
+    margin-right: 8px;
+}
+.patient-dashboard-info p.success {
+    background: red;
+}
+.patient-services .patient-dashboard-info{
+    margin-bottom: 55px;
+}
+.patient-services{
+    margin-bottom: 45px;
+}
+.patient-services button{
+    margin-bottom:45px; 
+}
+.act{
+    background: #f6f6f6;
+}
+.p-active{
+    padding: 10px 0;
+}
+.patient-img{
+    text-align: left;
+    width: auto !important;
+}
+.expert{
+    border: 1px solid #00c7ba;
+    background: #fff;
+    color: #00c7ba;
+    cursor: pointer;
+    font-weight: 700;
+    width: auto;
+    margin-right: 16px;
+}
+.patient-right{
+    margin-bottom: 45px;
+    padding: 0 25px;
+}
+.progress{
+    background: #fff;
+    padding: 18px;
+}
+.progress h5{
+    border-bottom: 2px solid #e3e3e3;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    margin-bottom:20px;
+    color: #5a5a5a;
+    font-size: 19px;
+}
+.experts{
+    background: #fff;
+    margin-top: 15px;
+    padding: 18px;
+}
+.experts p{
+    font-size: 14px;
+    color: #818181;
+}
+.experts .big-p{
+    color: #484848;
+    font-size: 17px;
+}
+.experts h5{
+    border-bottom: 2px solid #e3e3e3;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    color: #5a5a5a;
+    font-size: 19px;
+}
+.patient-progress{
+    position: relative;
+    margin-top: 0px;
+}
+
+.patient-progress p {
+    margin-top:0px;
+    margin-bottom:0px;
+    font-size:0.7em;
+}
+.progress i {
+    color:#999;
+}
+
+.patient-progress span {
+    color:#999;
+    font-size:0.6em;
+}
+
+h3 {
+    margin-top:0px;
+}
+
+.border-top{
+    border: 2px solid #00b8a6;
+    position: absolute;
+    width: 92%;
+    margin: auto;
+    left: 53%;
+    top: 19%;
+    z-index: 5;
+}
+.border{
+    left: 0;
+    right: -50%;
+}
+.patient-in{
+    display: inline-block;
+}
+.patient-in h6{
+    margin:0;
+    margin-left:25px; 
+    font-size: 20px;
+    color: #909090;
+} 
+.patient-in p{
+    margin:0;
+    margin-left:25px; 
+    color: #b9b9b9;
+} 
+.add-exper{
+    width: 170px;
+    margin-left:10px;
+}
+app-dashboard-menu{
+    height: 100vh;
+}
+.text-left{
+    text-align: left;
+}
+.patient-services h5{
+    text-align: left;
+    margin-left: 38px;
+    color: #696969;
+    font-size: 16px;
+}
+.left-block {
+    text-align: left;
+}
+.left-block p{
+    font-size: 16px;
+    color: #595959;
+    padding: 0;
+}
+.left-block span{
+    color: #a6a6a6;
+}
+.patient-risk button{
+    width: 38%;
+}
+.free-risk{
+    margin-top: 20px;
+    color: #525252;
+    font-size: 18px;
+}
+.patient-risk h4{
+    font-size: 27px;
+    color: #393939;
+    margin-bottom: 0;
+}
+.patient-risk h4 span{
+    float: right;
+}
+.patient-risk .overview-risk{
+    font-size: 15px;
+    color: #c7c7c7;
+}
+
+@media only screen and (max-width: 1170px) and (min-width: 960px) {
+    .patient-services button{
+        margin: 0;
+        width: 100%
+    }
+}
+@media only screen and (max-width: 960px) {
+    .border{
+        left: 0;
+        right: -32%;
+        width: 30%;
+    }
+    /* app-dashboard-menu{
+        height: 100%;
+    } */
+}
+@media only screen and (max-width: 830px) {
+    .patient-risk button{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .patient-d{
+        padding-left: 0;
+    }
+}
+@media only screen and (max-width: 560px) {
+    .patient-risk h4{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 414px) {
+    .patient-risk button{
+        font-size: 10px;
+    }
+    .border-top{
+        display: none;
+    }
+
+    .progress .patient-progress h6{
+        height: 55px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .progress p{
+        margin: 0;
+        height: 43px;
+        overflow: hidden;
+    }
+    .add-exper{
+        width: 100%;
+        margin: 0;
+    }
+}

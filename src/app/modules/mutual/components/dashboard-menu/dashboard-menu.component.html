@@ -1,0 +1,26 @@
+<div class="dashboard-menu" fxFlex="100" fxLayout="column">
+    <div class="dashboard-img" fxFlex="80" fxLayout="column">
+      <a class="text-center" routerLink="/">
+        <img src="/assets/img/icons/nav/MedNeon.svg" title="MedNeon">
+      </a>
+      <a class="text-center" [routerLink]="getRouterLink()">
+        <img src="/assets/img/icons/nav/dashboard.svg" alt="dashboard.svg">
+      </a>
+      <!--
+      <a class="text-center" routerLink="/messaging/" >
+        <img src="/assets/img/icons/nav/Messaging.svg" alt="Messaging.svg">
+      </a>-->
+      <a class="text-center" routerLink="/patient-list">
+        <img src="/assets/img/icons/nav/Patient List.svg" alt="Patient List.svg">
+      </a> 
+      <br>
+      <a class="text-center logout" (click) ="logout()" >       
+        <mat-icon>logout</mat-icon>
+      </a> 
+    </div>
+    <div class="dashboard-block" fxFlex="20" fxLayout="column"fxLayoutAlign="end end">
+      <img src="{{userProfile.UserProfilePicture}}"  default="/assets/img/advocate.jpg" alt="Patient List.svg">
+    </div>
+
+    
+  </div>

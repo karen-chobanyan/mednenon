@@ -1,0 +1,48 @@
+<div class="partner-dashboard" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">
+  <div class="partner-d">
+    <app-dashboard-menu></app-dashboard-menu>
+  </div>
+  <div class="partner-i" fxFlex="100" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">
+    <div fxFlex="20" class="dashboard-c">
+      <div class="dashboard-info text-center mat-elevation-z2">
+        <div class="partner-info">
+          <img default="/assets/img/advocate.jpg" src="{{user.UserProfilePicture}}" alt="Face10.jpeg">
+          <h5>{{user.DisplayName}}</h5>
+          <p>{{user.City}}
+            <span style="display:block;font-size:0.7em;color:#333;">{{user.UserTypeName}}</span>
+          </p>
+        </div>
+        <div fxLayout="column" class="partner-dashboard-info">
+          <p class="p-active" fxLayout="row" fxLayoutAlign="start stretch">
+            <span>
+              <img src="/assets/img/icons/sidebar/Dashboard.svg" alt="dashboard.svg">
+            </span>
+            <span>My Dashboard</span>
+          </p>
+          <p fxLayout="row" fxLayoutAlign="start stretch">
+            <span>
+              <img src="/assets/img/icons/sidebar/Manage.svg" alt="Manage.svg">
+            </span>
+            <span routerLink="/manage-profile">Manage Profile</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="partner-right" fxFlex="80">
+      <div class="div-bg-blog mat-elevation-z2" fxLayout="row" fxLayoutAlign="space-between center">
+        <img src="/assets/img/icons/Caret Left.svg" alt="Caret Left.svg">
+        <span> Personalized Genetic Intelligence
+          <sup>TM</sup>
+        </span>
+        <img src="/assets/img/icons/Caret Right.svg" alt="Caret Right.svg">
+      </div>
+      <div class="text-center top-btn">
+        <button (click)="newRequest()" class="btn">New Request</button>
+      </div>
+      <div class="text-center top-btn">
+        <button class="btn">View Reports</button>
+      </div>
+    </div>
+  </div>
+</div>

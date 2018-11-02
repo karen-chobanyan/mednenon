@@ -1,0 +1,304 @@
+<div class="home-block mdc-layout-grid">
+  <div class="header" fxLayout="row" fxLayoutAlign="space-between">
+    <div>
+      <a routerLink="/">
+        <img src="/assets/img/icons/sidebar/MedNeon-Logo.svg" alt="">
+      </a>
+    </div>
+    <!-- <div class="login">
+      <a (click)="openDialog()">Login(register)</a>
+    </div> -->
+      <div class="login">
+        <a *ngIf="!user" (click)="openLogin()">Login</a>
+        <a *ngIf="user"  [routerLink]="getRouterLink()" >Dashboard</a>
+      </div>
+  </div>
+
+  <div class="home-block-help" fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px">
+    <div class="home-top-block text-center" fxFlex="60" fxFlex.sm="100" fxFlex.xs="100">
+      <h2>We are here to help</h2>
+      <p>The
+        <span class="bold-text">early detection, accurate diagnosis</span> and
+        <span class="bold-text">precision treatment</span> of breast cancer requires numerous decisions with multiple medical specialists, which
+        can be overwhelming.
+        <span class="bold-text">Our personalized platform will connect you with a team of medicial experts</span> who will help you make informed
+        decisions tailored to your situation
+      </p>
+    </div>
+  </div>
+
+  <div class="blocks container" fxLayout="row" fxLayoutAlign="space-between" fxLayout.lt-md="column" fxLayoutGap="10px">
+    <div class="dna-risk-block text-center mat-elevation-z2" fxFlex="48">
+      <h4 class="general-h4">Understand Your DNA Risk</h4>
+      <img src="/assets/img/icons/home/dnarisk.svg" alt="dnarisk.svg">
+      <p>The tool is utilized to inform patients and help support the decision making process for genetic counseling and testing
+      </p>
+      <button class="btn">Get started for free</button>
+    </div>
+    <div class="join-medneon-block text-center mat-elevation-z2" fxFlex="48">
+      <h4 class="general-h4">Join MedNeon
+        <sup>TM</sup>
+      </h4>
+      <img src="/assets/img/icons/home/join.svg" alt="join.svg">
+      <p>Join Today for access to all our services, 200+ experts and a regular MedNeon
+        <sup>TM</sup> advocate to help you through your process.</p>
+      <button class="btn">Join today</button>
+    </div>
+  </div>
+
+  <div class="home-our-services text-center" fxLayoutAlign="space-between">
+    <div class="container">
+      <div class="our-services">
+        <h2>Our Services</h2>
+        <p>From mammograms to after-care, we are there for you every step of the way.</p>
+      </div>
+      <div fxLayout="row" class="our-services-img">
+        <div class="advocacy" fxFlex="33">
+          <a (click)="advocacyPopup()">
+            <img src="/assets/img/icons/home/advocacy.svg" alt="">
+          </a>
+          <h4 class="general-h4">Advocacy</h4>
+        </div>
+        <div class="personalized-tumor" fxFlex="33">
+          <a (click)="personilizedPopup()">
+            <img src="/assets/img/icons/home/ptb.svg" alt="">
+          </a>
+          <h4 class="general-h4">Personalized Tumor Board
+            <sup>TM</sup>
+          </h4>
+        </div>
+        <div class="risk-assessment" fxFlex="33">
+          <a (click)="assessmentPopup()">
+            <img src="/assets/img/icons/home/ra.svg" alt="">
+          </a>
+          <h4 class="general-h4">Risk Assessment</h4>
+        </div>
+      </div>
+      <button class="btn">Join to access our services</button>
+    </div>
+  </div>
+
+  <div class="whatever-phase">
+    <h2>Whatever phase you're in, we're here with you</h2>
+    <p>Select the phase you're in to see how we can help. </p>
+    <div class="whatever-block container">
+      <mat-tab-group>
+        <mat-tab label="First">
+          <ng-template class="early" mat-tab-label>
+            <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+              <img src="/assets/img/icons/home/earlydetection.svg" alt="">
+              <h4 class="general-h4">Early Detection</h4>
+            </div>
+          </ng-template>
+          <div class="newly">
+            <img src="/assets/img/banner/Early Detection.png" alt="">
+          </div>
+        </mat-tab>
+
+        <mat-tab label="Second">
+          <ng-template class="newly" mat-tab-label>
+            <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+              <img src="/assets/img/icons/home/newlydiagnosed.svg" alt="">
+              <h4 class="general-h4">Newly Diagnosed</h4>
+            </div>
+          </ng-template>
+          <div class="newly">
+            <img src="/assets/img/banner/Newly Diagnosed.png" alt="">
+          </div>
+        </mat-tab>
+
+        <mat-tab label="Third">
+          <ng-template class="treatment" mat-tab-label>
+            <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+              <img src="/assets/img/icons/home/treatment.svg" alt="">
+              <h4 class="general-h4">Treatment</h4>
+            </div>
+          </ng-template>
+          <div class="newly">
+            <img src="/assets/img/banner/Early Detection.png" alt="">
+          </div>
+        </mat-tab>
+
+        <mat-tab label="Four">
+          <ng-template class="survivorship" mat-tab-label>
+            <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+              <img src="/assets/img/icons/home/Survivorship.svg" alt="">
+              <h4 class="general-h4">Survivorship</h4>
+            </div>
+          </ng-template>
+          <div class="newly">
+            <img src="/assets/img/banner/Newly Diagnosed.png" alt="">
+          </div>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+  </div>
+
+  <div class="experts-available text-center">
+    <div class="container">
+      <h2>Experts Available Nationwide</h2>
+      <p>TME Breast Care Netwok has 200+ breast cancer experts all over the US.</p>
+      <img src="/assets/img/icons/home/map.png" alt="">
+    </div>
+  </div>
+
+  <div class="experts-block text-center padding">
+    <h2>We have 200+ Experts Ready to Help</h2>
+    <p>Here are just a few them</p>
+    <div class="experts-people container" fxLayout="column">
+      <div class="experts-people-block" fxFlex="50" fxLayoutAlign="space-between" fxLayout.xs="column" fxLayoutGap="10px">
+        <div fxFlex="33">
+          <div class="img-block">
+            <img src="/assets/img/faces/Pat Whitworth.jpg" alt="">
+          </div>
+          <h5>Dr. Pat Whitworth</h5>
+          <span>Breast Surgeon</span>
+        </div>
+        <div fxFlex="33">
+          <div class="img-block">
+            <img src="/assets/img/faces/Peter Beitsch.jpg" alt="">
+          </div>
+          <h5>Dr. Peter Beitsch</h5>
+          <span>Breast Surgeon</span>
+        </div>
+        <div fxFlex="33">
+          <div class="img-block">
+            <img src="/assets/img/faces/rakesh patel.jpg" alt="">
+          </div>
+          <h5>Dr. Rakesh Patel MD</h5>
+          <span>Radiation Oncologist</span>
+        </div>
+      </div>
+      <div class="experts-people-block" fxFlex="50" fxLayoutAlign="space-between" fxLayout.xs="column" fxLayoutGap="10px">
+        <div fxFlex="33">
+          <div class="img-block">
+            <img src="/assets/img/faces/Face11.jpg" alt="">
+          </div>
+          <h5>Dr. Wendy Addams, MD</h5>
+          <span>Medical Oncologist</span>
+        </div>
+        <div fxFlex="33">
+          <div class="img-block">
+            <img src="/assets/img/faces/Face5.jpg" alt="">
+          </div>
+          <h5>Dr. Cheryl Washington</h5>
+          <span>Genetic Counselor</span>
+        </div>
+        <div fxFlex="33">
+          <div class="img-block">
+            <img src="/assets/img/faces/Mark Gittleman.jpg" alt="">
+          </div>
+          <h5>Dr. Mark Gittleman MD</h5>
+          <span>Breast Surgeon</span>
+        </div>
+      </div>
+    </div>
+    <button class="btn">View all our experts</button>
+  </div>
+
+  <div class="personal-journey text-center">
+    <h2>Your Personal Journey</h2>
+    <p>Your own personal expert group is here to help.</p>
+    <div fxLayout="column" fxLayoutAlign=" center">
+      <div class="personal-width" fxFlex="20">
+        <img src="/assets/img/icons/home/Personal Journey - Advocate.svg">
+        <p>A patient advoxate to guide and support you through every aspect of your journey - finding and connecting you to
+          the right resources.</p>
+      </div>
+      <div class="personal-width" fxFlex="20">
+        <img src="/assets/img/icons/home/Personal Journey - PHR.svg">
+        <p>Upload, access, and share your Patient Health Record all in one place. Not sure what documents you need? We can help
+          with that,
+        </p>
+      </div>
+      <div class="personal-width" fxFlex="20">
+        <img src="/assets/img/icons/home/Personal Journey - PTB.svg">
+        <p>Your Personal Tumor Board
+          <sup>TM</sup> will guide you through your diagnosis and create personalized recommendations based on your individual
+          health data.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="our-partners text-center">
+    <div class="container">
+      <h2>Our Partners</h2>
+      <p>TME Breast Care Network has over 200+ breast cancer experts to help you throught the process</p>
+      <div class="experts-people" fxLayout="column">
+        <div fxFlex="50">
+          <div fxFlex="33">
+            <div class="img-block">
+              <img src="/assets/img/sponsors/Invitae.jpg" alt="Invitae.jpg">
+            </div>
+          </div>
+          <div fxFlex="33">
+            <div class="img-block">
+              <img src="/assets/img/sponsors/Myriad.jpg" alt="Myriad.jpg">
+            </div>
+          </div>
+          <div fxFlex="33">
+            <div class="img-block">
+              <img src="/assets/img/sponsors/LabSolutions.png" alt="LabSolutions.png">
+            </div>
+          </div>
+        </div>
+        <div fxFlex="50">
+          <div fxFlex="33">
+            <div class="img-block">
+              <img src="/assets/img/sponsors/Prelude.png" alt="Prelude.png">
+            </div>
+          </div>
+          <div fxFlex="33">
+            <div class="img-block">
+              <img src="/assets/img/sponsors/Agendia.jpg" alt="Agendia.jpg">
+            </div>
+          </div>
+          <div fxFlex="33">
+            <div class="img-block">
+              <img src="/assets/img/sponsors/Hologic.jpg" alt="Hologic.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="work-toghe text-center">
+    <div class="work-toghe-absolute"></div>
+    <div class="container work-toghe-relative">
+      <h2>Let's Work Together</h2>
+      <p>Let TME Breast Care Network help you with your personalized journey today</p>
+      <div></div>
+    </div>
+  </div>
+
+  <div class="blocks-bottom">
+    <div class="container" fxLayout="row" fxLayoutAlign="space-between" fxLayout.lt-md="column" fxLayoutGap="10px">
+      <div class="und-risk text-center mat-elevation-z2" fxFlex="48">
+        <h4 class="general-h4">Understand Your DNA Risk</h4>
+        <p>The tool is utilized to inform patients and help support the decision making process for genetic counseling and testing
+        </p>
+        <button class="btn">Get started for free</button>
+      </div>
+      <div class="join-medneon-block text-center mat-elevation-z2" fxFlex="48">
+        <h4 class="general-h4">Join MedNeon</h4>
+        <p>Join Today for access to all our services, 200+ experts and a regular MedNeon
+          <sup>TM</sup> advocate to help you through your process.</p>
+        <button class="btn">Join today</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer" fxLayout="row" fxLayoutAlign="space-between">
+    <div>
+      <a href="">
+        <img src="/assets/img/icons/sidebar/MedNeon-Logo.svg" alt="">
+      </a>
+    </div>
+    <div>
+      <p>&copy; 2018</p>
+    </div>
+  </div>
+
+</div>

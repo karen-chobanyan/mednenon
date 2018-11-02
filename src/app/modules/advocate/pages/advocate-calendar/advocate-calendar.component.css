@@ -1,0 +1,86 @@
+.calendar-info-home {
+    background: #fff;
+    height: 100vh;
+}
+.calendar-info-home .calendar-info{
+    border-bottom: 2px solid #e3e3e3;
+    padding: 15px 0;
+}
+.calendar-info-home .calendar-info img{
+    border-radius: 50%;
+}
+img{
+    cursor: pointer;
+}
+app-dashboard-menu{
+    height: 100vh;
+}
+.advocate-c{
+    position: fixed;
+    left: 0;
+    width: 64px;
+    height: 100%;
+}
+.calendar-h{
+    padding-left: 50px; 
+}
+.calendar-i{
+    max-width: 300px !important;
+    padding:0 15px; 
+}
+.calendar-dashboard-info p{
+    cursor: pointer;
+    padding: 15px;
+    margin: 0;
+}
+.calendar-dashboard-info p span{
+    color: #424242;
+    width: 187px;    
+}
+.calendar-img{
+    text-align: left;
+    width: auto !important;
+}
+.calendar-dashboard-info .p-active{
+    background: #f6f6f6;
+}
+.advocate-rigth{
+    padding: 0 15px;
+}
+.calendar-arrow{
+    background: #fff;
+    margin-bottom: 25px;
+}
+.calendar-blog{
+    background: #fff;
+    border: 1px solid #d7dadd;
+    border-radius: 5px;
+}
+::ng-deep .igx-calendar__header{
+    background: transparent;
+    display: none;
+}
+.calendar-arrow ::ng-deep .igx-calendar__body-row, .igx-calendar__body-row--wrap{
+    display: none;
+}
+.calendar-personal{
+    border-right: 1px solid #d7dadd;
+    padding: 25px;
+}
+.calendar-personal .calendar-div-bg {
+    margin-bottom: 30px
+}
+.calendar-personal .calendar-div-bg img{
+    margin-right: 17px;
+}
+.calendar-personal .calendar-div-bg h6{
+    font-size: 20px;
+}
+@media only screen and (max-width: 960px) {
+    app-dashboard-menu{
+        height: 100%;
+    }
+    .calendar-info-home{
+        height: 100%;
+    }
+}

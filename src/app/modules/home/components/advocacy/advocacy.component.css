@@ -1,0 +1,54 @@
+.advocacy-page {
+    position: relative;
+}
+.advocacy-page .left-advocacy{
+    background: linear-gradient(to bottom, #e26b76 0%, #ec8f87 100%);
+    margin-right: 0 !important;
+}
+.advocacy-page .right-advocacy{
+    padding: 1% 25px 8%; 
+    margin: 0 !important;
+}
+.close{
+    position: absolute;
+    z-index: 99;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    right: 35px;
+    top: 20px;
+}
+.advocacy-page .right-advocacy button {
+    background: #e66874;
+}
+.advocacy-page .right-advocacy h4{
+    color: #505050;
+    font-size: 19px;
+    font-weight: 500;
+}
+.advocacy-page .right-advocacy p{
+    color: #5a5a5a;
+}
+.advocacy-page .right-advocacy .img-block{
+    margin: 40px 0;
+}
+.advocacy-page .right-advocacy .img-block p{
+    color: #3e3e3e;
+    font-weight: 600;
+}
+@media only screen and (max-width: 960px) {
+    .advocacy-page .left-advocacy{
+        padding: 15% 0;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .advocacy-page{
+        height: 80vh;
+        overflow-y:scroll; 
+    }
+}
+@media only screen and (max-width: 414px) {
+    .advocacy-page .right-advocacy button {
+        width: 100%;
+    }
+}

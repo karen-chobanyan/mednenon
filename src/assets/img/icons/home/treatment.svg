@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 15</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Risk-Assessment-Process" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="00.-Patient-–-Home" transform="translate(-617.000000, -1926.000000)" fill="#14B8A7">
+            <g id="Group-15" transform="translate(617.000000, 1926.000000)">
+                <g id="Group">
+                    <path d="M28,12 L36,12 L36,4 L44,4 L44,12 L52,12 L52,20 L44,20 L44,28 L36,28 L36,20 L28,20 L28,12 Z M40,32 C48.836,32 56,24.832 56,16 C56,7.16 48.836,0 40,0 C31.164,0 24,7.16 24,16 C24,24.832 31.164,32 40,32 L40,32 Z" id="Fill-2628"></path>
+                    <path d="M0,40 L0,76 C0,78.208 1.792,80 4,80 L12,80 L12,36 L4,36 C1.792,36 0,37.792 0,40" id="Fill-2629"></path>
+                    <path d="M56,48 L24,48 L24,44 L56,44 L56,48 Z M56,60 L24,60 L24,56 L56,56 L56,60 Z M60,12 L59.596,12 C59.86,13.292 60,14.632 60,16 C60,27.04 51.048,36 40,36 C28.956,36 20,27.04 20,16 C20,14.632 20.14,13.292 20.404,12 L20,12 C17.792,12 16,13.792 16,16 L16,80 L36,80 L36,68 L44,68 L44,80 L64,80 L64,16 C64,13.792 62.208,12 60,12 L60,12 Z" id="Fill-2630"></path>
+                    <path d="M76,36 L68,36 L68,80 L76,80 C78.208,80 80,78.208 80,76 L80,40 C80,37.792 78.208,36 76,36" id="Fill-2631"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

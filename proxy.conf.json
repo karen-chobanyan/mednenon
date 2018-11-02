@@ -1,0 +1,14 @@
+{
+    "/MedNeonServices/*": {
+      "target": "https://staging.medneon.com",
+      "secure": false,
+      "logLevel": "debug",
+      "changeOrigin": true
+    },
+    "/DynamicFiles/*": {
+      "target": "https://staging.medneon.com",
+      "secure": false,
+      "logLevel": "debug",
+      "changeOrigin": true
+    }
+  }

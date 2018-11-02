@@ -1,0 +1,90 @@
+<div class="experts-dashboard" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">
+  <div class="experts-d">
+    <app-dashboard-menu></app-dashboard-menu>
+  </div>
+  <div class="experts-i" fxFlex="100" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">
+    <div fxFlex="20" class="experts-t">
+      <div class="experts-info text-center mat-elevation-z2">
+        <div class="experts-info-pic" >
+          <div class="expert-img">
+              <img src="{{user.UserProfilePicture}}" alt="Face10.jpeg" default="/assets/img/default-ava.png">
+          </div>
+          <h5>{{user.DisplayName}}</h5>
+          <p>{{user.City}}, {{user.State}}</p>
+          <p>{{user.UserTypeName}}</p>
+        </div>
+        <div fxLayout="column" class="experts-dashboard-info">
+          <p class="p-active" fxLayout="row" fxLayoutAlign="start stretch">
+            <span>
+              <img src="/assets/img/icons/sidebar/Dashboard.svg" alt="dashboard.svg">
+            </span>
+            <span>My Dashboard</span>
+          </p>
+          <!--
+          <p fxLayout="row" fxLayoutAlign="space-evenly center">
+            <span>
+              <img src="/assets/img/icons/sidebar/Calendar.svg" alt="Calendar.svg">
+            </span>
+            <span>My Calendar</span>
+          </p>-->
+          <p fxLayout="row" fxLayoutAlign="start stretch">
+            <span>
+              <img src="/assets/img/icons/sidebar/Manage.svg" alt="Manage.svg">
+            </span>
+            <span routerLink="/manage-profile">Manage Profile</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div fxFlex="80" class="experts-right">
+      <h3>My Upcoming Appointments</h3>
+      <p>The calendar shows a broad overview of what you have coming up this month</p>
+      <div fxLayout="column">
+        <!-- <div class="experts-bg mat-elevation-z2" *ngFor="let myapp of myAppointment" fxLayout="row" fxLayout.xs="column">
+          <div fxFlex="40" fxLayout="row" fxLayoutAlign="start center">
+            <div>
+              <img src="/assets/img/patient.png" alt="Face10.jpeg">
+            </div>
+            <div>
+              <h6>{{myapp.FirstName}} {{myapp.LastName}}</h6>
+              <span>{{myapp.VendorName}}</span>
+            </div>
+          </div>
+          <div class="text-right" fxFlex="60">
+            <button routerLink="/experts/experts-opinion/{{myapp.PatientID}}" class="btn accept">Write Test Results Opinion</button>
+          </div>
+        </div> -->
+        <div *ngIf="false" class="experts-bg mat-elevation-z2" fxLayout.xs="column">
+          <div fxFlex="40">
+            <h6>Personalized Tumor Board
+              <sup>TM</sup>
+            </h6>
+            <span>Starts in 5 minutes</span>
+          </div>
+          <div class="text-right" fxFlex="60">
+            <button class="btn decline">More Info</button>
+            <button class="btn accept">Join PTB</button>
+          </div>
+        </div>
+
+        <h5>Requests</h5>
+        <div class="experts-bg mat-elevation-z2" *ngFor="let myapp of myAppointment" fxLayout="row" fxLayout.xs="column">
+          <div fxFlex="40" fxLayout="row" fxLayoutAlign="start center">
+            <div>
+              <img src="/assets/img/patient.png" alt="Face10.jpeg">
+            </div>
+            <div>
+              <h6>{{myapp.FirstName}} {{myapp.LastName}}</h6>
+              <span>{{myapp.VendorName}}</span>
+            </div>
+          </div>
+          <div class="text-right" fxFlex="60">
+            <button class="btn accept" (click)="acceptPatientExperts(myapp.PendingRequestID)">Accept Patient</button>
+          </div>
+        </div>
+       
+       
+      </div>
+    </div>
+  </div>
+</div>

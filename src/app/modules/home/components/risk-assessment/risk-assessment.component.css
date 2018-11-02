@@ -1,0 +1,55 @@
+.risk-assessment{
+    position: relative;
+}
+.left-assessment{
+    background: #0068af;
+    margin: 0 !important;
+}
+.close{
+    position: absolute;
+    z-index: 99;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    right: 35px;
+    top: 20px;
+}
+.right-assessment{
+    padding: 0 15px 15%;
+}
+.right-assessment .money{
+    color: #000;
+    font-size: 34px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.right-assessment button{
+    background: #0068af;
+    margin-top: 25px;
+}
+.right-assessment .extra,
+.right-assessment .personal-per{
+    margin: 0;
+}
+.right-assessment .img-block p{
+    font-size: 13px;
+    color: #3e3e3e;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 960px) {
+    .left-assessment{
+        padding:15% 0; 
+    }
+}
+@media only screen and (max-width: 960px) {
+    .risk-assessment{
+        height: 80vh;
+        overflow-y:scroll; 
+    }
+}
+@media only screen and (max-width: 414px) {
+    .right-assessment button{
+        width: 100%;
+    }
+}

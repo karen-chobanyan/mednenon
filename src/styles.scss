@@ -1,0 +1,191 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import '~igniteui-angular/lib/core/styles/themes/index';
+
+@include igx-core();
+@include igx-theme($default-palette);
+
+.sample-wrapper {
+    width: inherit;
+    position: relative;
+    height: 100%;
+    margin: 0 auto;
+    background: transparent;
+}
+.sample-column {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 0 25%;
+    align-content: flex-start;
+    margin: 16px;
+    min-width: 280px;
+}
+
+.sample-title {
+    color: #0375be;
+    margin-bottom: 24px;
+}
+
+.sample-title .light {
+    font-weight: 400;
+}
+
+.sample-description {
+    font-size: 14px;
+    font-weight: normal;
+    color: #717171;
+}
+
+@-webkit-keyframes color-change-2x {
+    0% {
+        background: #fdf8f0;
+    }
+    100% {
+        background: #f6e7ec;
+    }
+}
+
+@keyframes color-change-2x {
+    0% {
+        background: #fdf8f0;
+    }
+    100% {
+        background: #f6e7ec;
+    }
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.error > div > div {
+    background-color: red !important;
+}
+.headerAlignSyle {
+    text-align: right !important;
+}
+
+@font-face {
+    font-family: LatoBlack;
+    src: url(assets/fonts/Lato/Lato-Black.ttf);
+}
+@font-face {
+    font-family: LatoBlackItalic;
+    src: url(assets/fonts/Lato/Lato-BlackItalic.ttf);
+} 
+@font-face {
+    font-family: LatoBold;
+    src: url(assets/fonts/Lato/Lato-Bold.ttf);
+}
+@font-face {
+    font-family: LatoBoldItalic;
+    src: url(assets/fonts/Lato/Lato-BoldItalic.ttf);
+} 
+@font-face {
+    font-family: LatoHairline;
+    src: url(assets/fonts/Lato/Lato-Hairline.ttf);
+}
+@font-face {
+    font-family: LatoHairlineItalic;
+    src: url(assets/fonts/Lato/Lato-HairlineItalic.ttf);
+} 
+@font-face {
+    font-family: LatoHeavy;
+    src: url(assets/fonts/Lato/Lato-Heavy.ttf);
+}
+@font-face {
+    font-family: LatoHeavyItalic;
+    src: url(assets/fonts/Lato/Lato-HeavyItalic.ttf);
+} 
+@font-face {
+    font-family: LatoItalic;
+    src: url(assets/fonts/Lato/Lato-Italic.ttf);
+} 
+@font-face {
+    font-family: LatoLight;
+    src: url(assets/fonts/Lato/Lato-Light.ttf);
+}
+@font-face {
+    font-family: LatoLightItalic;
+    src: url(assets/fonts/Lato/Lato-LightItalic.ttf);
+} 
+@font-face {
+    font-family: LatoMedium;
+    src: url(assets/fonts/Lato/Lato-Medium.ttf);
+}
+@font-face {
+    font-family: LatoMediumItalic;
+    src: url(assets/fonts/Lato/Lato-MediumItalic.ttf);
+} 
+@font-face {
+    font-family: LatoRegular;
+    src: url(assets/fonts/Lato/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: LatoSemibold;
+    src: url(assets/fonts/Lato/Lato-Semibold.ttf);
+}
+@font-face {
+    font-family: LatoSemiboldItalic;
+    src: url(assets/fonts/Lato/Lato-SemiboldItalic.ttf);
+}
+@font-face {
+    font-family: LatoThin;
+    src: url(assets/fonts/Lato/Lato-Thin.ttf);
+}
+@font-face {
+    font-family: LatoThinItalic;
+    src: url(assets/fonts/Lato/Lato-ThinItalic.ttf);
+}
+body{
+    font-family: LatoRegular, sans-serif;
+    margin: 0;
+    background: #f6f6f6;
+}
+*{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.btn{
+    background: #00b8a6;
+    cursor: pointer;
+    width: 246px;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 23px;
+    border: none;
+}
+.padding{
+    padding: 5% 0;
+}   
+.container {
+    width: 1000px;
+    margin: auto;
+    max-width: 100%;
+    padding: 0 16px;
+}
+.text-center{
+    text-align: center;
+}
+sup{
+    font-size: 10px;
+}

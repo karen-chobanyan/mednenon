@@ -1,0 +1,90 @@
+<div class="advocate-dashboard" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">
+
+  <div class="adv-dm">
+    <app-dashboard-menu style="height:100%;"></app-dashboard-menu>
+  </div>
+  <div class="adv-block" fxFlex="100" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">
+    <div class="advocate-s" fxFlex="20">
+      <div class="dashboard-info text-center mat-elevation-z2">
+        <div class="advocate-info">
+          <div class="advocate-image">
+            <img src="{{user.UserProfilePicture}}" default="/assets/img/advocate.jpg" alt="Face10.jpeg">
+          </div>
+          <h5>{{user.DisplayName}}</h5>
+          <p>{{user.City}}
+            <span style="display:block;font-size:0.7em;color:#333;">Advocate</span>
+        </div>
+        <div fxLayout="column" class="advocate-dashboard-info">
+          <p class="p-active" fxLayout="row" fxLayoutAlign="center stretch">
+            <span class="text-right">
+              <img src="/assets/img/icons/sidebar/Dashboard.svg" alt="dashboard.svg">
+            </span>
+            <span>My Dashboard</span>
+          </p>
+          <!---
+          <p routerLink="/advocate/advocate-calendar" fxLayout="row" fxLayoutAlign="space-evenly center">
+            <span>
+              <img src="/assets/img/icons/sidebar/Calendar.svg" alt="Calendar.svg">
+            </span>
+            <span>My Calendar</span>
+          </p>-->
+          <p fxLayout="row" fxLayoutAlign="center stretch">
+            <span>
+              <img src="/assets/img/icons/sidebar/Manage.svg" alt="Manage.svg">
+            </span>
+            <span routerLink="/manage-profile">Manage Profile</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="dashboard-right" fxFlex="100" fxLayout.xs="column">
+      <div fxFlex="33" style="padding:10px;" >
+          <h5>Unassigned</h5>
+        <div  *ngFor="let accepted of patientRequests" class="div-bg mat-elevation-z2" fxLayout="row" fxLayout.xs="column">
+          <div fxLayout="row" fxLayoutAlign="start center">
+            <div>
+              <img src="{{accepted.img}}" default="/assets/img/patient.png" alt="Face10.jpeg">
+            </div>
+            <div>
+              <h6>{{accepted.FirstName}} {{accepted.LastName}}</h6>
+              <span>{{accepted.VendorName}}</span>
+              <button class="btn" [routerLink]="'/patient-list/' + accepted.PatientID + '/add_experts'" >ADD EXPERTS</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- -->
+      <div fxFlex="33" style="padding:10px;border-left:1px solid #ddd;border-right:1px solid #ddd;" >
+          <h5>Pending Expert Acceptance</h5>
+        <div  *ngFor="let accepted of patientAssigned" class="div-bg mat-elevation-z2" fxLayout="row" fxLayout.xs="column">
+          <div fxLayout="row" fxLayoutAlign="start center">
+            <div>
+              <img src="{{accepted.img}}" default="/assets/img/patient.png" alt="Face10.jpeg">
+            </div>
+            <div>
+              <h6>{{accepted.FirstName}} {{accepted.LastName}}</h6>
+              <span>{{accepted.VendorName}}</span>
+              <button class="btn" [routerLink]="'/patient-list/' + accepted.PatientID" >GOTO PROFILE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!----- -->
+      <div fxFlex="33" style="padding:10px;" >
+          <h5>Pending Expert Opinion</h5>
+        <div  *ngFor="let accepted of patientCompleted" class="div-bg mat-elevation-z2" fxLayout="row" fxLayout.xs="column">
+          <div fxLayout="row" fxLayoutAlign="start center">
+            <div>
+              <img src="{{accepted.img}}" default="/assets/img/patient.png" alt="Face10.jpeg">
+            </div>
+            <div>
+              <h6>{{accepted.FirstName}} {{accepted.LastName}}</h6>
+              <span>{{accepted.VendorName}}</span>
+              <button class="btn" [routerLink]="'/patient-list/' + accepted.PatientID" >GOTO PROFILE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

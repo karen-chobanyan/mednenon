@@ -1,0 +1,46 @@
+<div class="add-expert">
+
+  <div class="export-title">
+    <h4>Add Experts</h4>
+    <div class="close" (click)="onNoClick()">X</div>
+  </div>
+
+  <div class="search-block">
+    <p>Search for Experts</p>
+    <form class="example-form expert-form">
+      <div class="expert-form-group" fxLayout="row" fxLayout.xs="column">
+        <mat-form-field fxLex="80"  class="example-full-width">
+          <input matInput (input)="modelChanged($event)">
+        </mat-form-field>
+        <div fxLex="20">
+          <mat-form-field>
+              <mat-select [(value)]="selected" (selectionChange)="sortBy($event)">
+                <mat-option value="sort">Sort By</mat-option>
+                <mat-option value="Genetic Counsellor">Genetic Counsellor</mat-option>
+                <mat-option value="Medical Oncologist">Medical Oncologist</mat-option>
+                <mat-option value="Breast Surgeon">Breast Surgeon</mat-option>
+              </mat-select>
+            </mat-form-field>
+        </div>
+      </div>
+      <div class="experts">
+
+        <div class="expert-violet-info" *ngFor="let expert of experts" fxLayout="row" fxLayout.xs="column" fxLayoutAlign.xs="start start"
+          fxLayoutAlign="center center">
+          <div fxFlex="70">
+            <div class="expert-in">
+              <img src="{{experts.UserProfilePicture}}" default="/assets/img/default-ava.png" alt="Patient">
+            </div>
+            <div class="expert-in">
+              <h6>{{expert.FirstName}} {{expert.FirstName}}</h6>
+              <p>{{expert.Title}}</p>
+            </div>
+          </div>
+          <div class="add-expert-block" fxFlex="30">
+            <a (click)="addExpert($event, expert.ExpertID)">Add Expert</a>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

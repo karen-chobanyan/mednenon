@@ -1,0 +1,74 @@
+<div class="results-opinion" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">
+  <div class="results-right" fxFlex="100">
+    <form class="example-form" [formGroup]="opinionResults" (ngSubmit)="opinionRequest(opinionResults)">
+      <div class="experts-result-bg mat-elevation-z2" fxLayout="row" fxLayout.xs="column" fxLayout.sm="column">
+        <div class="experts-r">
+          <div class="test-result">
+            <div class="pdf-name" *ngIf="userType != 'expert'">
+              <div class="object">
+                <object (click)="downloadPDF()" data="/assets/img/pdf-page.png?#zoom=45">
+                </object>
+                <a href="{{patient.LabReportPath}}" download="{{patient.LabReportPath}}" *ngIf="userType != 'expert'"></a>
+              </div>
+              <span>
+                {{genetic}}
+              </span>
+            </div>
+            <input formControlName="geneticpdf" type="file" (change)="GeneticFile($event)">
+          </div>
+        </div>
+        <div fxFlex="87">
+          <h4>Genetic Test Results</h4>
+        </div>
+        <div class="experts-r">
+          <div class="test-result">
+            <div class="pdf-name" *ngIf="userType != 'expert'" >
+              <div class="object">
+                <object (click)="downloadPDF()" data="/assets/img/pdf-page.png?#zoom=45">
+                </object>
+                <a href="{{patient.Ask2MeReportPath}}" download="{{patient.Ask2MeReportPath}}" *ngIf="userType != 'expert'"></a>
+              </div> 
+              <span>
+                {{medical}}
+              </span>
+            </div>
+            <input type="file" formControlName="medicialpdf" (change)="MedicalFile($event)">
+          </div>
+        </div>
+        <div fxFlex="87">
+          <h4>ASK2ME
+            <sup>TM</sup> Medical MGMT Report</h4>
+        </div>
+      </div>
+
+      <div *ngIf="userType=='expert'" fxLayout="column" style="margin-top:20px;">
+
+        <div fxFlex="50" fxLayout="column" fxLayout.xs="column">
+          <div class="experts-result-bg mat-elevation-z2" fxLayout="row" fxLayout.xs="column">
+            <div fxFlex="50" fxLayout="row" fxLayoutAlign="start center">
+              <div>
+                <img src="{{user.UserProfilePicture}}" alt="Face10.jpeg" default="/assets/img/default-ava.png">
+              </div>
+              <div>
+                <h6>{{user.DisplayName}}</h6>
+                <span>{{user.UserTypeName}}</span>
+              </div>
+            </div>
+            <div fxFlex="50" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="start center">
+              <h5 class="writeopinion" fxFlex="50">The Opinions</h5>
+              <mat-form-field class="example-full-width">
+                <textarea formControlName="writeopinion" matInput placeholder="Write Your Opinion here..."></textarea>
+              </mat-form-field>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="userType=='expert'" class="text-right">
+        <button class="btn">Save Opinion</button>
+      </div>
+    </form>
+
+  </div>
+
+
+</div>

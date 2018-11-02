@@ -1,0 +1,109 @@
+app-dashboard-menu{
+    height: 100vh;
+}
+.list-home{
+    background: #fff;
+    overflow-y: auto;
+    height: 100vh;
+    padding: 0 15px;
+    max-width: 350px !important;
+}
+.list-home H3{
+    margin-top: 15px;
+}
+
+option {
+ padding:10px;
+ padding-left:10px;padding-right:10px;height:40px;
+}
+
+select {
+    margin-top:5px;height:40px;
+    padding:10px;
+    padding-left:10px;padding-right:10px;
+    background-color:#eee;
+    border-radius:8px;
+    display:block;
+    border-width:0px;
+}
+.list-filter span{
+    cursor: pointer;
+}
+
+.example-full-width {
+    margin-top:5px;height:40px;
+    padding-left:10px;padding-right:10px;
+    background-color:#eee;
+    border-radius:8px;
+    display:block;
+    border-width:0px;
+}
+
+
+.list-block > img{
+    border-radius: 50%;
+    margin-right: 15px;
+    width: 70px;
+    height: 70px;   
+}
+.list-block h5{
+    line-height: 1.2;
+    margin: 14px 0;
+    color: #6a6a6a;
+    font-size: 14px;
+}
+.list-block h5 img{
+    margin-left: 5px;
+}
+.list-block p{
+    color: #a1a1a1;
+    font-size: 13px;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+.patient-l{
+    position: fixed;
+    left: 0;
+    width: 50px;
+    height: 100%;
+}
+.patient-r{
+    padding-left: 50px;
+}
+.text-right{
+    text-align: right;
+}
+.list-span{
+    margin: 16px 0;
+}
+.select-patient{
+    padding: 0 15px;
+}
+.select-patient h2{
+    font-size: 35px;
+    margin-bottom: 0;
+    color: #393939;
+}
+.select-patient p{
+    font-size: 14px;
+}
+.data-patients a{
+    cursor: pointer;
+}
+.data-patients{
+    margin: 20px 0;
+}
+@media only screen and (max-width: 960px) {
+    app-dashboard-menu{
+        height: 100%;
+    }
+    .select-patient{
+        margin-top: 25px;
+    }
+}
+@media only screen and (max-width: 414px) {
+    .list-home{
+        width: 100%;
+        max-width: 100% !important;
+    }
+}

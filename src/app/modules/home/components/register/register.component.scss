@@ -1,0 +1,110 @@
+.example-form {
+    min-width: 150px;
+    max-width: 600px;
+    width: 100%;
+}
+.text-right{
+    text-align: right;
+}
+.danger{
+    color: red;
+}
+::ng-deep .cdk-overlay-pane{
+    overflow-y: scroll;
+}
+::ng-deep .mat-form-field-invalid .mat-input-element, 
+::ng-deep .mat-warn .mat-input-element{
+    border: 1px solid red !important;
+}
+.register-block {
+    position: relative;
+}
+.register-block .register-right-block{
+    padding: 5% 0 35px 0;
+    background: #fff;
+}
+.register-block  ::ng-deep .mat-form-field-appearance-legacy .mat-form-field-underline{
+    height: 0 !important;
+}
+.register-block  ::ng-deep .mat-form-field.mat-form-field-invalid .mat-form-field-ripple,
+.mat-form-field.mat-form-field-invalid .mat-form-field-ripple.mat-accent{
+    background: transparent !important;
+}
+.register-block  ::ng-deep .mat-form-field-appearance-legacy .mat-form-field-ripple{
+    height: 0 !important;
+}
+.register-block .register-right-block input,
+.register-block .register-right-block mat-select{
+    border: 1px solid #dadcdf;
+    border-radius: 3px;
+    padding: 8px 6px;
+    font-size: 16px;
+    margin-top: 7px;
+  
+}
+.register-block .register-right-block h4{
+    font-size: 25px;
+    padding: 0 15px;
+    margin: auto;
+    font-weight: 500;
+}
+.register-block .register-left{
+    background: linear-gradient(to bottom, #e26b76 0%, #ec8f87 100%);
+    margin-right: 0 !important;
+}
+.register-block .register-left p{
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+    width: 50%;
+}
+.register-block .register-right-block form{
+    padding: 0 15px;
+    margin: auto;
+}
+.register-block .register-right-block form button{
+    font-weight: 600;
+    width: 100%;
+    height: 45px;
+}
+.close{
+    position: absolute;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    right: 35px;
+    top: 20px;
+}
+.example-full-width {
+    width: 100%;
+}
+.register-block .register-right-block .href-login a{
+    text-decoration: underline;
+    color: #4c4c4c;
+}
+@media only screen and (max-width: 960px) {
+    .register-block .register-left{
+      padding:10% 0; 
+      margin-bottom: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .register-block .register-left p{
+        width: 100%;
+        padding: 0 15px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .question-block .right-question p{
+      padding: 0 15px;
+      width: 100%;
+    }
+    .register-block .register-left p{
+        font-size: 18px;
+    }
+    .register-block .register-left{
+        padding:16% 0; 
+      }
+}

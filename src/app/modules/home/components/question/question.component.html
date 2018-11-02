@@ -1,0 +1,32 @@
+<div class="question-block text-center" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutGap="10px">
+
+  <div class="close" (click)="onNoClick()">X</div>
+  <div class="left-question" fxFlex="50" fxLayout="column" fxLayoutAlign="center center">
+    <img src="/assets/img/icons/home/MedNeon-Logo-w.svg" alt="MedNeon-Logo.svg">
+    <p>MedNeon's experts are available to you for personalized care and peace of mind</p>
+  </div>
+
+  <div class="right-question" fxFlex="50">
+    <p>Join Today for access our services, 200+ experts and a regular MedNeon
+      <sup>TM</sup> advocate to help you through your process.</p>
+    <h5>Ask Us Anything</h5>
+    <form class="example-form" [formGroup]="questionForm" (ngSubmit)="askquestions(questionForm)">
+      <mat-form-field class="example-full-width">
+        <label for="">Your Name</label>
+        <input matInput formControlName="name">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <label for="">Your Email</label>
+        <input matInput formControlName="email">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <label for="">Your Message</label>
+        <textarea matInput formControlName="message" rows="4" cols="50"></textarea>
+      </mat-form-field>
+      <button class="btn">Submit</button>
+    </form>
+  </div>
+
+</div>

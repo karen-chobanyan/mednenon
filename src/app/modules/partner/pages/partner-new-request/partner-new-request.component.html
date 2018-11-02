@@ -1,0 +1,144 @@
+<div class="partner-request" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">
+  <div class="partner-r">
+    <app-dashboard-menu></app-dashboard-menu>
+  </div>
+  <div class="partner-i" fxFlex="100">
+    <div>
+      <h2 class="text-center">New Request</h2>
+    </div>
+    <div class="patient-information" fxLayoutAlign="center center" fxLayout="column">
+      <div class="patient-form-group">
+        <form class="example-form" [formGroup]="newRequest" (ngSubmit)="addRequest(newRequest)">
+          <div class=" mat-elevation-z2 top-form">
+            <h6 class="border-b">Patient Information</h6>
+            <div fxLayout="row" fxLayout.xs="column">
+              <mat-form-field fxFlex="33" class="example-full-width">
+                <Label>First Name</Label>
+                <input formControlName="FirstName" matInput>
+              </mat-form-field>
+
+              <mat-form-field fxFlex="33" class="example-full-width">
+                <Label>Last Name</Label>
+                <input formControlName="LastName" matInput>
+              </mat-form-field>
+
+              <mat-form-field fxFlex="33" class="example-full-width">
+                <Label>Email</Label>
+                <input matInput type="Email" formControlName="Email">
+              </mat-form-field>
+            </div>
+
+            <div fxLayout="row" fxLayout.xs="column">
+              <mat-form-field fxFlex="33" class="example-full-width">
+                <Label>Gene</Label>
+                <mat-select [(value)]="selected" formControlName="Gene">
+                  <mat-option *ngFor="let gene of genes" [value]="gene.ListItem">
+                    {{gene.ListItem}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+
+              <mat-form-field fxFlex="33" class="example-full-width">
+                <Label>Prior Surgeries</Label>
+                <mat-select formControlName="Surgeries" multiple>
+                  <mat-option *ngFor="let surgery of surgeries" [value]="surgery.ListItem">
+                    {{surgery.ListItem}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+
+              <mat-form-field fxFlex="33" class="example-full-width">
+                <Label>Prior Cancer</Label>
+                <mat-select formControlName="PriorCancer" multiple>
+                  <mat-option *ngFor="let cancer of cancers" [value]="cancer.ListItem">
+                    {{cancer.ListItem}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+
+            <div class="specimen-type" fxLayout="row" fxLayout.xs="column">
+
+
+              <mat-form-field fxFlex="33" class="example-full-width">
+                <Label>Specimen Type</Label>
+                <input matInput formControlName="SpecimenType">
+              </mat-form-field>
+
+              <mat-form-field fxFlex="33">
+                <Label>Analysis Date</Label>
+                <input matInput formControlName="AnalysisDate" [matDatepicker]="picker1">
+                <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                <mat-datepicker #picker1></mat-datepicker>
+              </mat-form-field>
+
+              <mat-form-field fxFlex="33">
+                <Label>Collection Date</Label>
+                <input matInput formControlName="CollectionDate" [matDatepicker]="picker2">
+                <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                <mat-datepicker #picker2></mat-datepicker>
+              </mat-form-field>
+            </div>
+
+            <div fxLayout="row" fxLayout.xs="column">
+              <mat-form-field fxFlex="50">
+                <Label>Date of Birth</Label>
+                <input matInput formControlName="DOB" [matDatepicker]="picker">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+              </mat-form-field>
+              <mat-form-field fxFlex="50" class="example-full-width">
+                <Label>Ethnicity</Label>
+                <mat-select formControlName="Ethnicity">
+                  <mat-option value="Asian">Asian</mat-option>
+                  <mat-option value="African American / Black">African American / Black</mat-option>
+                  <mat-option value="Caucasian / White">Caucasian / White</mat-option>
+                  <mat-option value="Hispanic / Latino">Hispanic / Latino</mat-option>
+                  <mat-option value="Native American / Alaskan Native">Native American / Alaskan Native</mat-option>
+                  <mat-option value="Native Hawaiian / Other Pacific Islander">Native Hawaiian / Other Pacific Islander</mat-option>
+                  <mat-option value="Mixed">Mixed</mat-option>
+                  <mat-option value="Other">Other</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <p>Gender</p>
+            <div>
+              <mat-radio-group formControlName="Gender">
+                <mat-radio-button value="female">Female</mat-radio-button>
+                <mat-radio-button value="male">Male</mat-radio-button>
+              </mat-radio-group>
+            </div>
+          </div>
+          <div class="mat-elevation-z2 bottom-form">
+            <h5 class="border-b">Add Lab Report</h5>
+            <div fxLayout="row" fxLayout.xs="column">
+              <div class="uploadfile" fxFlex="50">
+                <div class="attach-name" *ngIf="labReport.name">
+                  <span>
+                    {{labReport.name}}
+                  </span>
+                  <mat-icon (click)="deleteFile()">close</mat-icon>
+                </div>
+                <input type="file"accept="application/pdf,application/vnd.ms-excel" (change)="labReportAttached($event)">
+              </div>
+              <div class="uploadfile" fxFlex="50">
+                <div class="attach-name" *ngFor="let name of attachmentsNames; let i = index">
+                  <span>
+                    {{name}}
+                  </span>
+                  <mat-icon (click)="deleteFiles(i)">close</mat-icon>
+                </div>
+                <input type="file" accept="application/pdf,application/vnd.ms-excel" (change)="attachmentsAdded($event)" multiple>
+              </div>
+            </div>
+
+            <div class="btn-block">
+              <button class="btn">Submit Request</button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

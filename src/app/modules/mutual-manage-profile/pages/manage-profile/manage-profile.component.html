@@ -1,0 +1,38 @@
+<div class="manage-profile" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">
+  <div class="manage">
+    <app-dashboard-menu style="height:100%;"></app-dashboard-menu>
+  </div>
+  <div class="manage-block" fxFlex="100" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">
+    <div class="manage-s" fxFlex="20">
+      <div class="manage-dashboard-info text-center mat-elevation-z2">
+        <div class="manage-info">
+          <div class="manage-dash"> 
+            <div class="manage-image">
+              <img src="{{user.UserProfilePicture}}" default="/assets/img/advocate.jpg" alt="Face10.jpeg">
+            </div>
+            <h5>{{user.DisplayName}}</h5>
+            <p>{{user.City}}
+              <span style="display:block;font-size:0.7em;color:#333;">{{user.UserTypeName}}</span>
+            </p>
+          </div>
+          <p class="my-dashboard" [routerLink]="getRouterLink()" fxLayout="row" fxLayoutAlign="center stretch">
+            <span class="text-right">
+              <img src="/assets/img/icons/sidebar/Dashboard.svg" alt="dashboard.svg">
+            </span>
+            <span>My Dashboard</span>
+          </p>
+          <p class="p-active my-dashboard" fxLayout="row" fxLayoutAlign="center stretch">
+            <span class="text-right">
+              <img src="/assets/img/icons/sidebar/Manage.svg" alt="dashboard.svg">
+            </span>
+            <span>Manage Profile</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="manage-profile-block" fxFlex="80">
+      <h4>Manage Profile</h4>
+      <button class="btn" (click)="changePass()">Change Password</button>
+    </div>
+  </div>
+</div>

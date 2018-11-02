@@ -1,0 +1,62 @@
+.personalized-block{
+    position: relative;
+}
+.left-personalized{
+    background: #925daf;
+    margin: 0 !important;
+}
+.close{
+    position: absolute;
+    z-index: 99;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    right: 35px;
+    top: 20px;
+}
+.right-personalized{
+    padding: 15px 0 12% 20px;
+}
+.right-personalized p{
+    color: #5a5a5a;
+}
+.right-personalized .img-block p{
+    color: #3e3e3e;
+    font-weight: 600;
+}
+.right-personalized h4{
+    color: #505050;
+    font-size: 19px;
+    font-weight: 600;
+}
+.right-personalized .money{
+    color: #000;
+    font-size: 34px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.right-personalized button{
+    background: #925daf;
+    margin-top: 25px;
+}
+.right-personalized .extra,
+.right-personalized .personal-per{
+    margin: 0;
+}
+
+@media only screen and (max-width: 960px) {
+    .left-personalized{
+        padding:15% 0; 
+    }
+}
+@media only screen and (max-width: 960px) {
+    .personalized-block{
+        height: 80vh;
+        overflow-y:scroll; 
+    }
+}
+@media only screen and (max-width: 414px) {
+    .right-personalized button{
+        width: 100%;
+    }
+}

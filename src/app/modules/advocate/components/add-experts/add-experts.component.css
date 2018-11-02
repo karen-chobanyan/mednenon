@@ -1,0 +1,117 @@
+.close{
+    position: absolute;
+    z-index: 99;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    right: 5px;
+    top: 0;
+}
+.add-expert{
+    position: relative;
+}
+.example-container {
+    display: flex;
+    flex-direction: column;
+}
+.add-expert .export-title h4{
+    border-bottom: 1px solid #d2d2d2;
+    padding-bottom: 18px;
+    color: #454545;
+    margin: 0;
+}
+.example-container > * {
+    width: 100%;
+}
+.expert-form-group{
+    position: relative;
+}
+.expert-form-group ::ng-deep .mat-form-field-wrapper .mat-form-field-flex .mat-select{
+    padding: 17px 0 0 10px
+}
+.danger{
+    display: none;
+}
+.success{
+    display: block;
+}
+.expert-form span{
+    margin-left: 15px;
+    cursor: pointer;
+    color: #00b9a7;
+
+}
+.expert-form mat-form-field{
+    width: 80%;
+}
+.expert-violet-info{
+    margin: 25px 0;
+}
+.select.success{
+    display: block;
+    border: 1px solid #d5d5d5;
+    padding: 15px;
+    width: 210px;
+    position: absolute;
+    right: 0;
+    background: #fff;
+    color: #595959;
+    top: 69%;
+}
+::ng-deep .mat-selected.mat-active .mat-option-text{
+    background: url('/assets/img/icons/Selected.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    color: #00b9a7;
+}
+.expert-violet-info .add-expert-block a{
+    font-family: LatoBlack, sans-serif;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #00b8a6;
+}
+.expert-violet-info img{
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+.expert-in{
+    display: inline-block;
+}
+.expert-in h6{
+    margin:0;
+    margin-left:25px; 
+    font-size: 15px;
+    color: #4a4a4a;
+} 
+.expert-in p{
+    margin:0;
+    margin-left:25px; 
+    color: #a9aaaa;
+} 
+::ng-deep .mat-form-field-invalid .mat-input-element, 
+::ng-deep .mat-warn .mat-input-element{
+    border: 1px solid red !important;
+}
+.add-expert ::ng-deep .mat-form-field-appearance-legacy .mat-form-field-underline{
+    height: 0 !important;
+}
+.add-expert ::ng-deep .mat-form-field.mat-form-field-invalid .mat-form-field-ripple,
+.mat-form-field.mat-form-field-invalid .mat-form-field-ripple.mat-accent{
+    background: transparent !important;
+}
+.add-expert ::ng-deep .mat-form-field-appearance-legacy .mat-form-field-ripple{
+    height: 0 !important;
+}
+input{
+    border: 1px solid #dadcdf;
+    border-radius: 3px;
+    padding: 8px 6px;
+    font-size: 16px;
+    margin-top: 7px;
+}
+@media only screen and (max-width: 600px) {
+    .expert-violet-info .add-expert-block{
+        margin-top:17px; 
+    }
+}

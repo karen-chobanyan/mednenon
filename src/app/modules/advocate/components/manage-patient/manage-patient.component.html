@@ -1,0 +1,88 @@
+<div class="manage-patient">
+
+  <div>
+    <h3>Manage Patient</h3>
+    <div class="close" (click)="onNoClick()">X</div>
+  </div>
+
+  <div>
+    <p>The Patient</p>
+    <div class="list-block" fxLayout="row">
+      <img src="/assets/img/faces/Face10.jpeg" alt="">
+      <div>
+        <h5>Sasha Adams
+          <img src="/assets/img/icons/Selected.svg" alt="">
+        </h5>
+        <span>San Francisco, CA</span>
+      </div>
+    </div>
+    <mat-tab-group>
+      <mat-tab label="Manage Services">
+        <div class="manage-services" fxLayout="row" fxLayout.xs="column">
+          <div fxFlex="80">
+              <img src="/assets/img/icons/sidebar/Advocacy.svg" alt="">
+              <span>Advocacy</span>
+          </div>
+          <div fxFlex="20">
+              Inactive <mat-checkbox></mat-checkbox>
+          </div>
+        </div>
+        <div class="manage-services" fxLayout="row" fxLayout.xs="column">
+            <div fxFlex="80">
+                <img src="/assets/img/icons/sidebar/RiskAssessment.svg" alt="">
+                <span>Personilazed Risk Assessment <sup>TM</sup></span><br />
+                <a href=""><span>Close</span></a>
+            </div>
+            <div class="personal-close" fxFlex="20">
+                Active <mat-checkbox></mat-checkbox>
+            </div>
+          </div>
+        <div>
+          <p>Free Risk Assessment</p>
+          <mat-form-field>
+            <mat-select [(value)]="selected">
+              <mat-option>None</mat-option>
+              <mat-option value="option1">Option 1</mat-option>
+              <mat-option value="option2">Option 2</mat-option>
+              <mat-option value="option3">Option 3</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div>
+          <p>Genetic Testing</p>
+          <mat-form-field>
+            <mat-select [(value)]="selected1">
+              <mat-option>None</mat-option>
+              <mat-option value="option4">Option 1</mat-option>
+              <mat-option value="option5">Option 2</mat-option>
+              <mat-option value="option6">Option 3</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div>
+          <p>Expert Interpretation</p>
+          <mat-form-field>
+            <mat-select [(value)]="selected2">
+              <mat-option>None</mat-option>
+              <mat-option value="option7">Option 1</mat-option>
+              <mat-option value="option8">Option 2</mat-option>
+              <mat-option value="option9">Option 3</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="manage-services" fxLayout="row" fxLayout.xs="column">
+            <div fxFlex="70">
+                <img src="/assets/img/icons/sidebar/PTB.svg" alt="">
+                <span>Personalized Tumor Board<sup>TM</sup></span>
+            </div>
+            <div fxFlex="30">
+                Inactive<mat-checkbox></mat-checkbox>
+            </div>
+        </div>
+      </mat-tab>
+      <mat-tab label="Manage Messaging"> Content 2 </mat-tab>
+      <mat-tab label="Manage Phases"> Content 3 </mat-tab>
+    </mat-tab-group>
+  </div>
+
+</div>

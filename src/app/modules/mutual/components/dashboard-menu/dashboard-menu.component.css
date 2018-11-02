@@ -1,0 +1,43 @@
+.dashboard-menu{
+    background: linear-gradient(to bottom, #e66974 0%, #ef8d87 100%);
+}
+.dashboard-menu img{
+    cursor: pointer;
+    padding: 25px 0;
+}
+
+.dashboard-block{
+    padding: 10px;
+}
+.dashboard-block img{
+    border: 2px solid #fff;
+    padding: 0 !important;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+.logout{
+    cursor: pointer;
+}
+.logout mat-icon{
+    color: #fff;
+}
+
+@media only screen and (max-width: 1200px) {
+    .dashboard-block{
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 959px) {
+    .dashboard-block img{
+        margin: auto;
+        width: 50px;
+        height: 50px;
+    }
+}
+@media only screen and (max-width: 387px) {
+    .advocate-dashboard-info p span{
+        font-size: 15px;
+    }
+}

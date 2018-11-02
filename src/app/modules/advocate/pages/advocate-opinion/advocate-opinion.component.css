@@ -1,0 +1,49 @@
+.advocate-right{
+    padding: 0 15px;
+    padding-left: 60px;
+    margin-bottom: 25px;
+}
+.advocate-result-bg{
+    background: #fff;
+    padding: 15px;
+    margin: 0 10px;
+}
+.advocate-result-bg img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.advocate-o{
+    position: fixed;
+    left: 0;
+    width: 50px;
+    height: 100%;
+}
+.advocate-result-bg h6{
+    margin: 0;
+}
+.text-right{
+    text-align: right;
+    margin-top: 25px;
+}
+app-dashboard-menu{
+    height: 100vh;
+}
+.advocate-right h5{
+    font-size: 20px;
+    margin: 20px 0;;
+}
+
+.example-full-width {
+    width: 100%;
+}
+.example-form {
+    min-width: 150px;
+    width: 100%;
+}
+@media only screen and (max-width: 960px) {
+    app-dashboard-menu{
+        height: 100%;
+    }
+}

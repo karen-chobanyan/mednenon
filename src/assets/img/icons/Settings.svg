@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Fill 58</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Risk-Assessment-Process" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="XX1.-Patient-–-PHR" transform="translate(-580.000000, -133.000000)" fill="#14B8A7">
+            <g id="Group-2" transform="translate(300.000000, 113.000000)">
+                <g id="Fill-58" transform="translate(280.000000, 20.000000)">
+                    <path d="M20,12 L17.738,12 C17.498,12.932 17.1,13.798 16.565,14.564 L18,16 L16,18 L14.565,16.564 C13.797,17.1 12.932,17.498 12,17.738 L12,20 L8,20 L8,17.738 C7.068,17.498 6.202,17.1 5.435,16.564 L4,18 L2,16 L3.435,14.564 C2.9,13.798 2.502,12.932 2.262,12 L0,12 L0,8 L2.262,8 C2.502,7.068 2.9,6.202 3.435,5.436 L2,4 L4,2 L5.435,3.436 C6.202,2.9 7.068,2.502 8,2.262 L8,0 L12,0 L12,2.262 C12.932,2.502 13.797,2.9 14.565,3.436 L16,2 L18,4 L16.565,5.436 C17.1,6.202 17.498,7.068 17.738,8 L20,8 L20,12 Z M10,14 C12.209139,14 14,12.209139 14,10 C14,7.790861 12.209139,6 10,6 C7.790861,6 6,7.790861 6,10 C6,12.209139 7.790861,14 10,14 Z" id="Combined-Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

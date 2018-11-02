@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="100px" viewBox="0 0 80 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Fill 20</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Risk-Assessment-Process" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="00.-Patient-–-Home" transform="translate(-472.000000, -4853.000000)" fill="#14B8A7">
+            <g id="Fill-20" transform="translate(472.000000, 4853.000000)">
+                <path d="M50,30 L50,5 L75,30 L50,30 Z M65,80 L15,80 L15,70 L65,70 L65,80 Z M15,50 L55,50 L55,60 L15,60 L15,50 Z M57.07,0 L10,0 C4.485,0 0,4.49 0,10 L0,90 C0,95.515 4.485,100 10,100 L70,100 C75.515,100 80,95.515 80,90 L80,22.93 L57.07,0 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

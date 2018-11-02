@@ -1,0 +1,178 @@
+<div *ngIf="id" class="patient-dashboard" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">
+  <div class="patient-d" fxFlex="100" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">
+
+    <div *ngIf="false" fxFlex="100" class="dashboard-i">
+      <div class="dashboard-info text-center mat-elevation-z2">
+        <div *ngIf="false" class="patient-info">
+          <img src="{{patient.LabReportPath}}" default="/assets/img/patient.png" alt="Face10.jpeg">
+          <h5>{{patient.FirstName}} {{patient.LastName}}</h5>
+          <p>{{patient.Ethnicity}}</p>
+          <p>Patient</p>
+        </div>
+        <div *ngIf="false" fxLayout="column" class="patient-dashboard-info">
+          <p *ngIf="false" class="p-active" fxLayout="row" fxLayoutAlign="center stretch">
+            <span class="patient-img">
+              <img src="/assets/img/icons/sidebar/Dashboard.svg" alt="dashboard.svg">
+            </span>
+            <span>My Dashboard</span>
+          </p>
+          <p *ngIf="false" fxLayout="row" fxLayoutAlign="center stretch">
+            <span class="patient-img">
+              <img src="/assets/img/icons/sidebar/Calendar.svg" alt="Calendar.svg">
+            </span>
+            <span>Personal Health Record Incomplete</span>
+          </p>
+          <p (click)="datapatients(id)" fxLayout="row" fxLayoutAlign="center stretch">
+            <span class="patient-img">
+              <img src="/assets/img/icons/sidebar/Manage.svg" alt="Manage.svg">
+            </span>
+            <span>Manage Patient</span>
+          </p>
+        </div>
+        <div class="patient-services" *ngIf="false">
+          <h5 class="text-left">Services</h5>
+          <div fxLayout="column" class="patient-dashboard-info">
+            <div class="p-active act" fxLayout="row" fxLayoutAlign="space-evenly center">
+              <div fxFlex="30">
+                <span class="patient-img">
+                  <img src="/assets/img/icons/sidebar/RiskAssessment.svg" alt="dashboard.svg">
+                </span>
+              </div>
+              <div fxFlex="70" class="left-block">
+                <p>Personnalized Risk Assessment
+                  <sup>TM</sup>
+                </p>
+                <span>Added</span>
+              </div>
+            </div>
+
+            <div class="p-active" fxLayout="row" fxLayoutAlign="space-evenly center">
+              <div fxFlex="30">
+                <span class="patient-img">
+                  <img src="/assets/img/icons/sidebar/Advocacy.svg" alt="Calendar.svg">
+                </span>
+              </div>
+              <div fxFlex="70" class="left-block">
+                <p>Advocacy</p>
+                <span>Not Added</span>
+              </div>
+            </div>
+
+            <div class="p-active" fxLayout="row" fxLayoutAlign="space-evenly center">
+              <div fxFlex="30">
+                <span class="patient-img">
+                  <img src="/assets/img/icons/sidebar/PTB.svg" alt="Manage.svg">
+                </span>
+              </div>
+              <div fxFlex="70" class="left-block">
+                <p>Personalized Tumor Board
+                  <sup>TM</sup>
+                </p>
+                <span>Not Added</span>
+              </div>
+            </div>
+          </div>
+          <button class="btn expert add-exper">Message Added</button>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="patient-right" fxFlex="100">
+      <div *ngIf="false" class="patient-risk">
+        <h4>Personalized Risk Assessment
+          <sup>TM</sup>
+          <span>Added</span>
+        </h4>
+        <p class="overview-risk">This is an overview of the paid risk assessment services</p>
+        <button class="btn expert" routerLink="/advocate/free-risk-assessment-result">View Free Risk Assessment Results</button>
+        <p class="free-risk">The free risk assessment is calculation based on your personal and family history of determine the likelihood of
+          cancer-causing mutations in your genes. Depending on the results, you may choose to add our premium risk assessment
+          service which includes an assinged expert physician and certified genetics counselor to guide you through the process.
+          Genetic testing may be recommended to help identify a mutation that puts you at increased risk of cancer
+        </p>
+      </div>
+
+      <div class="progress mat-elevation-z2" fxLayout="row" fxLayout.xs="column">
+        <div fxLayout="row" fxLayoutAlign="start center">
+          <div>
+            <h3>{{patient.FirstName}} {{patient.LastName}}</h3>
+            <span>
+              <i>Specimen</i> : {{patient.SpecimenType}}</span>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="progress mat-elevation-z2">
+        <!-- ----------- -->
+        <div class="text-center patient-progress" fxLayout="row" fxLayoutAlign="center center">
+          <div fxFlex="25" style="position:relative;">
+            <div class="border-top"></div>
+            <img src="/assets/img/icons/Complete.svg" alt="" style="z-index:10;">
+            <h6>Lab Report</h6>
+            <p *ngIf="Workflow && Workflow.length > 0">{{patient.Workflow[0].Status || "NA"}}</p>
+            <span *ngIf="Workflow && Workflow.length > 0">{{patient.Workflow[0].Date || "NA"}}</span>
+          </div>
+          <div fxFlex="25" style="position:relative;">
+            <div class="border-top"></div>
+            <img src="/assets/img/icons/In Progress.svg" alt="" style="z-index:10;">
+            <h6>ASK2ME Report</h6>
+            <p *ngIf="Workflow && Workflow.length > 0">{{patient.Workflow[1].Status || "NA"}}</p>
+            <span *ngIf="Workflow && Workflow.length > 0">{{patient.Workflow[1].Date || "NA"}}</span>
+          </div>
+          <div fxFlex="25" style="position:relative;">
+            <div class="border-top"></div>
+            <img src="/assets/img/icons/Blank.svg" alt="" style="z-index:10;">
+            <h6>Expert Insights</h6>
+            <p *ngIf="Workflow && Workflow.length > 0">{{patient.Workflow[2].Status || "NA"}}</p>
+            <span *ngIf="Workflow && Workflow.length > 0">{{patient.Workflow[2].Date || "NA"}}</span>
+          </div>
+          <div fxFlex="25">
+            <img src="/assets/img/icons/Blank.svg" alt="" style="z-index:10;">
+            <h6>PGI Report</h6>
+            <p *ngIf="Workflow && Workflow.length > 0">{{patient.Workflow[3].Status || "NA"}}</p>
+            <span *ngIf="Workflow && Workflow.length > 0">{{patient.Workflow[3].Date || "NA"}}</span>
+          </div>
+        </div>
+
+        <!-- ----------------- -->
+      </div>
+
+
+
+
+      <div class="progress mat-elevation-z2" style="margin-top:20px;">
+
+        <h5 *ngIf="patient.FirstName">Experts
+
+        <button *ngIf="userType == 'advocate' || userType == 'adminAdvocate' || userType == 'admin'" class="btn expert add-exper"
+            (click)="addexperts(id)">Add</button>
+        </h5>
+        <div class="text-center patient-progress" fxLayout="row" fxLayoutAlign="center center">
+          <div *ngFor="let expert of experts" fxFlex="100" >
+            <div>
+              <img [src]="getImage(expert.UserProfilePicture)" default="/assets/img/partner.png" class="expert_thumb" >
+            </div>
+
+            <div>
+              <h6>{{expert.FirstName}} {{expert.LastName}}</h6>
+              <span>{{expert.Title}}</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <app-experts-opinion></app-experts-opinion>
+
+
+    </div>
+  </div>
+</div>

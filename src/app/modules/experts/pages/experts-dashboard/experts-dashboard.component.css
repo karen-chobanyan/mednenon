@@ -1,0 +1,110 @@
+.experts-info {
+    background: #fff;
+    height: 100vh;
+}
+.experts-info .experts-info-pic{
+    padding: 15px 0;
+    background: #fff;
+    border-bottom: 2px solid #ddd;
+}
+.experts-info .experts-info-pic img{
+    width: 100%;
+    height: auto;
+}
+.experts-info .experts-info-pic p{
+    margin-bottom: 7px;
+}
+.experts-info .experts-info-pic .expert-img{
+    border-radius: 50%;
+    overflow: hidden;
+    height: 120px;
+    margin: auto;
+    width: 120px;
+}
+.experts-dashboard-info p{
+    cursor: pointer;
+    padding: 15px;
+    margin: 0;
+}
+.p-active{
+    background: #f6f6f6;
+}
+app-dashboard-menu{
+    height: 100vh;
+}
+.experts-d{
+    position: fixed;
+    left: 0;
+    width: 64px;
+    height: 100%;
+}
+.experts-i{
+    padding-left:50px; 
+}
+.experts-t{
+    max-width: 300px !important;
+    padding: 0 15px;
+}
+.experts-dashboard-info p span{
+    color: #424242;
+    margin-right:8px;  
+}
+.text-right{
+    text-align: right;
+}
+.experts-right{
+    margin-left:auto;margin-right:auto;
+    max-width: 800px !important;
+}
+.experts-bg{
+    background: #fff;
+    padding: 25px;
+    margin-bottom: 17px;
+    border-radius: 5px;
+}
+.experts-bg img{
+    border-radius: 50%;
+    margin-right: 15px;
+    height: 80px;
+    width: 80px;
+}
+.experts-bg h6,
+.experts-bg span{
+    font-size: 15px;
+}
+.decline{
+    border: 1px solid #00c7ba;
+    margin-right: 16px;
+    background: #fff;
+    font-weight: 700;
+    color: #00c7ba;
+    width: 150px;
+}
+
+@media only screen and (max-width: 960px) {
+    app-dashboard-menu{
+        height: 100%;
+    }
+    .experts-info{
+        height: 100%;
+    }
+}
+@media only screen and (max-width: 832px) {
+    .experts-bg .decline{
+        margin-bottom: 15px;
+    }
+}
+@media only screen and (max-width: 630px) {
+    .experts-right{
+        padding-left: 15px;
+    }
+}
+@media only screen and (max-width: 414px) {
+    .text-right .decline{
+        margin: 15px 0;
+    }
+    .experts-dashboard button{
+        font-size: 13px;
+        width: 100%;
+    }
+}

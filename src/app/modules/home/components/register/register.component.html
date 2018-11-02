@@ -1,0 +1,68 @@
+<div class="register-block" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutGap="10px">
+  <div class="close"  (click)="onNoClick()">X</div>
+  <div class="register-left" fxFlex="50" fxLayout="column" fxLayoutAlign="center center">
+    <img src="/assets/img/icons/home/MedNeon-Logo-w.svg" alt="MedNeon-Logo.svg">
+    <p>MedNeon's experts are available to you for personalized care and peace of mind</p>
+  </div>
+  <div class="register-right-block" fxFlex="50">
+    <h4 class="example-form">Register with MedNeon</h4>
+    <form class="example-form" [formGroup]="registerform" (ngSubmit)="sendForm(registerform)">
+      <mat-form-field class="example-full-width">
+        <label>First Name</label>
+        <input matInput formControlName="firstName" required>
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <p>
+          <span fxFlex="50">Middle Name</span>
+          <span class="text-right" fxFlex="50">Optional</span>
+        </p>
+        <input matInput formControlName="middleName">
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <label>Last Name</label>
+        <input matInput formControlName="lastName" required>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <label>Email Address</label>
+        <input matInput type="email" formControlName="email" required>
+      </mat-form-field>
+
+      <table class="example-full-width" cellspacing="0">
+        <tr fxLayout.lg="column" fxLayout.md="column" fxLayout.sm="column" fxLayout.xs="column">
+          <td>
+            <mat-form-field class="example-full-width">
+              <label>ZIP Code</label>
+              <input matInput #postalCode maxlength="5" formControlName="zipCode" required>
+              <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field class="example-full-width">
+                <label>City</label>
+              <input matInput formControlName="city" required>
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field class="example-full-width">
+                <label>State</label>
+              <input matInput formControlName="state" required>
+            </mat-form-field>
+          </td>
+        </tr>
+      </table>
+
+      <mat-form-field class="example-full-width">
+        <mat-select formControlName="notyficationOpt" [ngClass]="selected" [(value)]="selected">
+          <mat-option value="option2">Current Phase</mat-option>
+          <mat-option value="option1">Option 1</mat-option>
+          <mat-option value="option3">Option 3</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <button class="btn">Sign Up</button>
+    </form>
+
+
+    <p class="text-center href-login"><a href="">Already have an account? Login</a></p>
+  </div>
+</div>

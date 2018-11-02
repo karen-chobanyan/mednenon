@@ -1,0 +1,311 @@
+.general-h4{
+    color: #363636;
+    font-size: 20px;
+    font-family: LatoLight, sans-serif;
+}
+.header{
+    padding: 15px 20px; 
+    background: #fff;
+}
+.header .login a{
+    border-left: 1px solid #000;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    color: #3c3c3c;
+    font-size: 19px;
+    padding-left: 20px
+}
+.home-block-help{
+    background: linear-gradient(to bottom, #e26b76 0%, #ec8f87 100%);
+    padding: 7% 0 12% 0;
+}
+.home-top-block{
+    margin: auto;
+}
+.home-top-block h2{
+    font-size: 34px;
+    color: #ffffff;
+}
+.home-top-block p{
+    color:#f9dadb;
+    font-size: 25px;
+    font-family: LatoLight, sans-serif;
+    line-height: 1.4;
+}
+.home-top-block p .bold-text{
+    font-family: LatoMedium, sans-serif;
+    font-weight: 600;
+    color: #fff;
+}
+.blocks{
+    margin-top: -100px;
+}
+.blocks-bottom{
+    position: relative;
+    margin-top: -100px;
+    padding-bottom: 5%;
+    z-index: 9;
+}
+.blocks-bottom p{
+    font-size: 18px;
+    color: #797979;
+}
+.blocks-bottom button{
+    width: 100%;
+}
+.blocks .dna-risk-block{
+    background: #fff;
+    padding:25px; 
+    border-radius: 3px;
+}
+
+.blocks .join-medneon-block button,
+.blocks .dna-risk-block button{
+    width: 100%;
+}
+.blocks  .join-medneon-block{
+    background: #fff;
+    padding:25px;
+    border-radius: 3px;
+}
+.blocks .join-medneon-block p,
+.blocks .dna-risk-block p{
+    font-size: 17px;
+    color: #a8a9a9;
+}
+.home-our-services{
+    background: #f6f6f6;
+    padding: 5% 0;
+}
+.home-our-services p{
+    font-size: 20px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 25px;
+}
+.home-our-services h2{
+    font-size: 30px;
+    color: #363636;
+}
+.home-our-services .our-services-img{
+    margin-bottom: 15px;
+}
+.home-our-services h4{
+    color: #3d3d3d;
+    font-size: 20px;
+    font-family:  LatoLight, sans-serif;
+}
+.whatever-phase{
+    background: #fff;
+    padding: 25px 0;
+    text-align: center;
+}
+.whatever-phase h2{
+    margin-top: 45px;
+    font-size: 30px;
+    color: #363636;
+    font-family: LatoBlack, sans-serif;
+}
+::ng-deep .mat-tab-label{
+    height: auto !important;
+    width: 25%;
+}
+.whatever-phase p{
+    margin-bottom: 45px;
+    font-size: 21px;
+    color: #363636;
+}
+.experts-block {
+    background: #fff;
+}
+.experts-block img{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+.experts-block .experts-people-block{
+    margin-bottom: 30px;
+}
+.experts-block h2{
+    font-size: 30px;
+    color: #363636;
+    font-family: LatoBold, sans-serif;
+}
+.experts-block p{
+    margin-bottom: 25px;
+    font-size: 20px;
+    color: #363636;
+}
+.experts-block .img-block{
+    width: 120px;
+    height: auto;
+    margin: auto;
+}
+.personal-journey{
+    padding: 50px 0;
+    background: #f6f6f6; 
+}
+.personal-journey h2{
+    margin-top: 25px;
+    font-size: 33px;
+    color: #363636;
+}
+.personal-journey .personal-width{
+    width: 28%;
+}
+.personal-journey p{
+    margin-bottom: 25px;
+    font-size: 20px;
+    color: #3e3e3e;
+}
+.work-toghe-relative{
+    position: relative;
+    z-index: 99;
+}
+.work-toghe-absolute{
+    width: 100%;
+    background: #e4abaf;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0.5;
+    z-index: 1;
+}
+.work-toghe{
+    background-image: url('/assets/img/banner/Home Footer.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    position: relative;
+    padding: 3% 0 10%;
+}
+.work-toghe h2{
+    color: #fff;
+    font-size: 35px;
+    font-family: LatoBold, sans-serif;
+}
+.work-toghe p{
+    font-size: 25px;
+    margin: auto;
+    width: 56%;
+    color: #fff;
+}
+.blocks-bottom .und-risk,
+.blocks-bottom .join-medneon-block {
+    padding: 25px;
+    background: #fff;
+}
+.our-partners {
+    background: #fff;
+    padding: 30px 0;
+}
+.our-partners h2{
+    margin-bottom: 15px;
+    padding-top: 15px;
+    font-size: 30px;
+    color: #363636;
+    font-family: LatoBold, sans-serif;
+}
+.our-partners p{
+    margin:auto;
+    width: 50%;
+    font-size: 20px;
+    color: #545454;
+}
+.our-partners .img-block{
+    padding: 25px;
+}
+.experts-available{
+    background: #fff;
+    padding: 25px 0;
+}
+.experts-available h2{
+    font-size: 30px;
+    color: #363636;
+    font-family: LatoBold, sans-serif;
+}
+.experts-available  p{
+    font-size: 20px;
+    width: 50%;
+    margin: 15px auto;
+}
+.footer{
+    background: #fff;
+    padding: 27px 20px 15px;
+}
+.footer p{
+    font-size: 18px;
+}
+.whatever-block h4{
+    margin: 11px 0;
+}
+.home-our-services .advocacy a,
+.home-our-services .personalized-tumor a,
+.home-our-services .risk-assessment a{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+    .container{
+        width: 100%;
+        padding:0; 
+    }
+    .home-top-block p{
+        padding: 0 15px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .personal-journey .personal-width{
+        width: 100%
+    }
+    .blocks,
+    .blocks-bottom{
+        margin-top: 0;
+    }
+    .blocks .dna-risk-block,
+    .blocks .join-medneon-block{
+        margin: 25px;
+    }
+    .blocks-bottom .und-risk,
+    .blocks-bottom .join-medneon-block{
+        margin: 25px;
+    }
+}
+
+@media only screen and (max-width: 684px) {
+    .home-our-services .advocacy,
+    .home-our-services .personalized-tumor,
+    .home-our-services .risk-assessment{
+        margin-right: 13px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .home-our-services p{
+        padding: 0 15px;
+        width: 100%;
+    }
+    .experts-available p{
+        padding: 0 15px;
+        width: 100%;
+    }
+    .personal-journey p{
+        padding: 0 15px;
+    }
+    .our-partners p{
+        width: 100%;
+        padding: 0 15px;
+    }
+    .work-toghe p{
+        width: 100%;
+        padding: 0 15px;
+    }
+    .home-our-services h4{
+        font-size: 15px;
+    }
+    .home-top-block p{
+        font-size: 18px;
+    }
+}

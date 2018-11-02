@@ -1,0 +1,62 @@
+.dashboard-info .partner-info img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.p-active{
+    background: #f6f6f6;
+}
+.div-bg-blog img{
+    cursor: pointer;
+}
+.partner-right{
+    height: calc(100vh);
+    padding: 25px;
+}
+.partner-i{
+    padding-left: 50px;
+}
+.div-bg-blog{
+    background: #fff;
+    padding: 25px;
+    margin-bottom: 17px;
+    border-radius: 5px;
+}
+.dashboard-c{
+    padding: 0 13px;
+}
+.top-btn{
+    margin: 15px 0;
+    font-size: 20px;
+}
+.partner-d{
+    position: fixed;
+    left: 0;
+    width: 62px;
+    height: 100%;
+}
+app-dashboard-menu{
+    height: 100%;
+}
+.partner-lab img{
+    padding-bottom: 25px;
+}
+.partner-dashboard-info p{
+    cursor: pointer;
+    padding: 15px;
+    margin: 0;
+}
+.partner-dashboard-info p span{
+    margin-right: 10px;
+}
+.dashboard-info {
+    background: #fff;
+    height: 100vh;
+    padding-top: 15px;
+}
+
+@media only screen and (max-width: 960px) {
+    .dashboard-info {
+        height: 100%;
+    }
+}

@@ -1,0 +1,63 @@
+.close{
+    position: absolute;
+    z-index: 99;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    right: 5px;
+    top: 0;
+}
+.manage-patient{
+    position: relative;
+}
+.manage-patient h3{
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 15px;
+    color: #4a4a4a;
+    margin: 0;
+}
+::ng-deep .cdk-overlay-pane{
+    overflow-y: scroll;
+}
+.list-block{
+    margin-bottom: 33px;
+}
+.list-block > img{
+    border-radius: 50%;
+    margin-right: 15px;
+    width: 65px;
+    height: 65px;
+}
+.list-block h5{
+    padding-top: 17px;
+    margin: 0;    
+}
+.manage-services span{
+    vertical-align: super;
+    margin-left: 15px;
+}
+::ng-deep .mat-tab-body{
+    margin-top: 25px;
+}
+.manage-services{
+    margin-bottom: 15px;
+}
+.manage-services a{
+    margin-left: 30px; 
+    color: #19d4c9;
+}
+::ng-deep .mat-form-field-flex{
+    border-radius: 4px;
+    padding: 0 14px;
+    width: 100%;
+}
+::ng-deep .mat-form-field{
+    width: 100%;
+}
+.personal-close{
+    color: #19d4c9;
+}
+.mat-checkbox-checked.mat-accent .mat-checkbox-background,
+.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background{
+    background: #19d4c9;
+}

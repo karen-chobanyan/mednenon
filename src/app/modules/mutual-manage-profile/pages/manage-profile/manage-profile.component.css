@@ -1,0 +1,66 @@
+.manage{
+    width: 72px;
+    position: fixed;
+    left: 0;
+    height: 100%;
+}
+.manage-image{
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 25px;
+    height: 80px;
+    width: 80px;
+}
+.manage-image img{    
+    height: auto;
+    width: 100%;
+}
+.manage-info{
+    border-bottom: 2px solid #d0d0d0;
+    background: #fff;
+    height: 100vh;
+    padding: 15px 0;
+}
+.manage-info h5{
+    font-size: 18px;
+    line-height: 15px;
+}
+.manage-info p{
+    margin: 0;
+}
+.manage-info p span{
+    font-size: 18px !important;
+    padding: 14px 0;
+    color: #424242;
+    margin-right:8px; 
+}
+.manage-profile-block{
+    padding-left: 25px;
+}
+.manage-profile-block h4{
+    letter-spacing: 3px;
+    margin: 15px 0;
+}
+.p-active{
+    background: #f6f6f6;
+}
+.my-dashboard{
+    cursor: pointer;
+}
+.manage-dash{
+    border-bottom: 2px solid #ddd;
+    padding: 15px 0;
+}
+.manage-s{
+    padding: 0 15px;
+    max-width: 300px !important;
+}
+.manage-block{
+    padding-left: 58px;
+}
+@media only screen and (max-width: 960px) {
+    .manage-info{
+        height: 100%;
+    }
+}

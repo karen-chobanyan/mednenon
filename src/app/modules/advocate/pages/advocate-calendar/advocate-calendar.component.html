@@ -1,0 +1,74 @@
+<div class="advocate-calendar" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">
+    <div class="advocate-c">
+        <app-dashboard-menu></app-dashboard-menu>
+      </div>
+  <div class="calendar-h" fxFlex="100" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">
+      <div class="calendar-i" fxFlex="20">
+          <div class="calendar-info-home text-center mat-elevation-z2">
+            <div *ngFor="let calendar of advocateData" class="calendar-info">
+              <img src="/assets/img/faces/Face10.jpeg" alt="Face10.jpeg">
+              <h5>{{calendar.name}}</h5>
+              <p>{{calendar.city}}</p>
+              <p>{{calendar.position}}</p>
+            </div>
+            <div fxLayout="column" class="calendar-dashboard-info">
+              <p fxLayout="row" fxLayout="row" fxLayoutAlign="space-evenly center">
+                <span class="calendar-img">
+                  <img src="/assets/img/icons/sidebar/Dashboard.svg" alt="dashboard.svg">
+                </span>
+                <span>My Dashboard</span>
+              </p>
+              <p class="p-active" fxLayout="row" fxLayoutAlign="space-evenly center">
+                <span class="calendar-img">
+                  <img src="/assets/img/icons/sidebar/Calendar.svg" alt="Calendar.svg">
+                </span>
+                <span>My Calendar</span>
+              </p>
+              <p fxLayout="row" fxLayoutAlign="space-evenly center">
+                <span class="calendar-img">
+                  <img src="/assets/img/icons/sidebar/Manage.svg" alt="Manage.svg">
+                </span>
+                <span>Manage Profile</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="advocate-rigth" fxFlex="80">
+          <h3>My Calendar</h3>
+          <p>Ypur calendar gives you an overview of your upcoming appointments and activites</p>
+          <div class="calendar-arrow mat-elevation-z2" fxLayoutAlign="space-between center" fxLayout.xs="column">
+              <article class="sample-column calendar-wrapper">
+                  <igx-calendar></igx-calendar>
+              </article>
+          </div>
+          <div class="calendar-blog" fxLayout="row" fxLayout.xs="column" fxLayout.sm="column">
+            <div class="calendar-personal" fxFlex="30">
+              <div class="calendar-div-bg" fxLayout="row" fxLayout.xs="column">
+                <div fxLayout="row" fxLayoutAlign="start center">
+                  <div>
+                    <img src="/assets/img/icons/sidebar/PTB.svg" alt="Face10.jpeg">
+                  </div>
+                  <div>
+                    <h6>3 Personalized Tumor Boards<sup>TM</sup></h6>
+                  </div>
+                </div>
+              </div>
+              <div class="calendar-div-bg" fxLayout="row" fxLayout.xs="column">
+                <div fxLayout="row" fxLayoutAlign="start center">
+                  <div>
+                    <img src="/assets/img/icons/sidebar/RiskAssessment.svg" alt="Face10.jpeg">
+                  </div>
+                  <div>
+                    <h6>1Personalized Risk Assessment<sup>TM</sup></h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div fxFlex="70">
+              <app-advocate-calendar-block></app-advocate-calendar-block>
+            </div>
+          </div>
+        </div>
+  </div>
+</div>

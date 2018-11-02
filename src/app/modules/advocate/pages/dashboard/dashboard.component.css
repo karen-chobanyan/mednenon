@@ -1,0 +1,177 @@
+.dashboard-info {
+    background: #fff;
+    height: 100vh;
+}
+.btn {
+    width:auto;
+    display:block;
+    margin-top:10px;
+    font-size:0.8em;
+    padding-right:8px;
+    padding-left:8px;
+    border-radius:8px;
+}
+.dashboard-info .advocate-info{
+    border-bottom: 2px solid #d0d0d0;
+    background: #fff;
+    padding: 15px 0;
+}
+.dashboard-info .advocate-info img{   
+    border-radius: 50%; 
+    height: auto;
+    width: 100%;
+}
+.advocate-image{
+    margin: auto;
+    height: 80px;
+    width: 80px;
+    margin-bottom: 25px;
+
+}
+.dashboard-info .advocate-info h5{
+  font-size: 18px;
+  line-height: 15px;
+}
+.dashboard-info .advocate-info p{
+  margin: 0;
+}
+.dashboard-info .advocate-info p span{
+  font-size: 18px !important;
+  padding: 14px 0;
+}
+.advocate-dashboard-info p{
+    cursor: pointer;
+    padding: 15px;
+    margin: 0;
+}
+.adv-dm{
+    width: 72px;
+    position: fixed;
+    left: 0;
+    height: 100%;
+}
+.adv-block{
+    padding-left: 58px;
+}
+.advocate-s{
+    padding: 0 15px;
+    max-width: 300px !important;
+}
+.advocate-dashboard-info p span{
+    display: inline-block;
+    line-height: 33px;
+    color: #424242;
+    margin-right:8px;
+    display: flex;
+    float: left;
+}
+.advocate-dashboard-info p{
+  text-align: left;
+  display: inline-block !important;
+}
+.advocate-dashboard-info p.success {
+    background: red;
+}
+.p-active{
+    background: #f6f6f6;
+}
+.dashboard-right{
+    padding: 0 10px;
+}
+.dashboard-right h5{
+  font-size: 16px;
+  padding: 10px 0;
+}
+.div-bg{
+    background: #fff;
+    padding: 17px 12px;
+    margin-bottom: 17px;
+    border-radius: 5px;
+    line-height: 12px
+}
+.div-bg-blog{
+    background: #fff;
+    padding: 25px;
+    margin-bottom: 17px;
+    border-radius: 5px; 
+}
+.div-bg-blog img{
+    cursor: pointer;
+}
+.div-bg img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+app-dashboard-menu{
+    height: 100vh;
+}
+h6{
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: LatoLight;
+}
+span{
+    color: #b4b4b4;
+    font-size: 15px;
+}
+.decline{
+    background: #fff;
+    color: #00c7ba;
+    border: 1px solid #00c7ba;
+    font-weight: 700;
+    width: 150px;
+    margin-right: 16px;
+}
+.accept{
+    width: 150px;
+}
+.text-right{
+    text-align: right;
+}
+
+@media only screen and (max-width: 960px) {
+    app-dashboard-menu{
+        height: 100%;
+    }
+    .dashboard-info{
+        height: 100%;
+    }
+}
+@media only screen and (max-width: 599px) {
+    .text-right{
+        text-align: center;
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .text-right .decline{
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .advocate-dashboard button{
+        font-size: 13px;
+        width: 100%;
+    }
+    .dashboard-right h5{
+        padding: 10px 13px;
+    }
+    .advocate-dashboard-info .text-right{
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 387px) {
+    h6{
+        font-size: 13px;
+    }
+    span{
+        font-size: 10px;
+    }
+    .advocate-dashboard-info p span{
+        font-size: 15px;
+    }
+}

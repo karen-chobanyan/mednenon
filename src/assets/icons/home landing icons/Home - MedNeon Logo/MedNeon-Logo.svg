@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="231px" height="32px" viewBox="0 0 231 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 25</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="98.2478324%" id="linearGradient-1">
+            <stop stop-color="#D66D75" offset="0%"></stop>
+            <stop stop-color="#E29587" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Risk-Assessment-Process" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="00.-Patient-–-Home" transform="translate(-40.000000, -6614.000000)">
+            <g id="Group-25" transform="translate(40.000000, 6614.000000)">
+                <g id="Logo">
+                    <text id="MEDNEON-TM" fill="url(#linearGradient-1)" font-family="Lato-Bold, Lato" font-size="24" font-weight="bold" line-spacing="24">
+                        <tspan x="63.574" y="22.6119385">MEDNEON </tspan>
+                    </text>
+                    <g id="Group">
+                        <g id="Rectangle" transform="translate(0.000000, 2.032258)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+                            <polygon id="Shape" points="7.67739708 0.247827107 15.3548619 0.247827107 7.67739708 26.8489346 0 26.8489346"></polygon>
+                        </g>
+                        <g id="Rectangle_2" transform="translate(14.903226, 2.032258)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+                            <polygon id="Shape" points="8.12903258 0.247827107 15.8064974 0.247827107 8.12903258 26.8489346 0.451635502 26.8489346"></polygon>
+                        </g>
+                        <g id="Rectangle_3" transform="translate(7.451613, 2.032258)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+                            <polygon id="Shape" points="0.22578388 0.247827107 7.90318096 0.247827107 15.5806458 26.8489346 7.90318096 26.8489346"></polygon>
+                        </g>
+                        <g id="Rectangle-(Stroke)" transform="translate(4.064516, 0.000000)" fill="#FFFFFF">
+                            <path d="M0.559453571,0 L13.0276283,0 L22.0211835,31.1612916 L9.55300877,31.1612916 L0.559453571,0 Z M3.61290789,2.28009203 L11.2903185,28.8811657 L18.9677156,28.8811657 L11.2903185,2.28009203 L3.61290789,2.28009203 Z" id="Shape"></path>
+                        </g>
+                        <g id="Rectangle_4" transform="translate(23.032259, 2.032258)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+                            <polygon id="Shape" points="0 0.247827107 7.67739708 0.247827107 15.3548619 26.8489346 7.67739708 26.8489346"></polygon>
+                        </g>
+                        <g id="Rectangle-(Stroke)_2" transform="translate(19.645162, 0.000000)" fill="#FFFFFF">
+                            <path d="M0.333629046,0 L12.8018037,0 L21.7953589,31.1612916 L9.32718424,31.1612916 L0.333629046,0 Z M3.38708336,2.28009203 L11.064494,28.8811657 L18.7418911,28.8811657 L11.064494,2.28009203 L3.38708336,2.28009203 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+                <text id="TM" fill="#D66D75" font-family="Lato-Bold, Lato" font-size="14" font-weight="bold" line-spacing="24">
+                    <tspan x="210.185" y="14">TM</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

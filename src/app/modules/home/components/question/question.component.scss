@@ -1,0 +1,117 @@
+.question-block .left-question{
+    background: linear-gradient(to bottom, #e26b76 0%, #ec8f87 100%);
+    margin-right: 0 !important;
+}
+.question-block{
+  position: relative;
+}
+.question-block .left-question p{
+  font-size: 22px;
+  color: #fff;
+  width: 56%;
+}
+::ng-deep .mat-form-field-invalid .mat-input-element, 
+::ng-deep .mat-warn .mat-input-element{
+    border: 1px solid red !important;
+}
+.example-form {
+  min-width: 150px;
+  max-width: 600px;
+  padding: 0 15px;
+  margin: auto;
+  width: 100%;
+}
+::ng-deep .cdk-overlay-pane{
+  overflow-y: scroll;
+}
+.question-block ::ng-deep .mat-form-field-appearance-legacy .mat-form-field-underline{
+  height: 0 !important;
+}
+.question-block ::ng-deep .mat-form-field.mat-form-field-invalid .mat-form-field-ripple,
+.mat-form-field.mat-form-field-invalid .mat-form-field-ripple.mat-accent{
+  background: transparent !important;
+}
+.question-block ::ng-deep .mat-form-field-appearance-legacy .mat-form-field-ripple{
+  height: 0 !important;
+}
+.example-full-width {
+  width: 100%;
+}
+.question-block .right-question{
+  padding: 8% 0 50px;
+  position: relative;
+  background: #fff;
+}
+.question-block .right-question button.btn{
+  color: #e4f8f6;
+  font-weight: 600;
+  width: 100%;
+}
+.question-block .right-question p{
+  font-size: 17px;
+  color: #474747;
+  font-family: LatoSemibold;
+  width: 54%;
+  margin: auto;
+}
+.question-block .right-question h5{
+  font-family: LatoSemibold;
+  margin: 45px 0;
+  font-size: 20px;
+  color: #474747;
+}
+.close{
+  position: absolute;
+  z-index: 99;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  right: 35px;
+  top: 20px;
+}
+.question-block .right-question textarea,
+.question-block .right-question input{
+  border: 1px solid #dadcdf;
+  border-radius: 3px;
+  padding: 8px 6px;
+  font-size: 16px;
+  margin-top: 7px;
+
+}
+.question-block .right-question textarea{
+  resize: none;
+}
+.question-block .right-question label{
+  color: #414141;
+  padding-bottom: 12px;
+}
+
+@media only screen and (max-width: 960px) {
+  .question-block .left-question{
+    padding:14% 0; 
+    margin-bottom: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .question-block .example-form{
+    padding: 0 25px;
+  }
+  .question-block .left-question p{
+    padding: 0 15px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .question-block .right-question p{
+    padding: 0 15px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .question-block .right-question h5{
+    margin: 15px 0;
+  }
+}

@@ -1,0 +1,27 @@
+<div class="login-page" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutGap="10px">
+  <div class="close" (click)="closeLoginModal()">X</div>
+  <div class="left-login" fxFlex="50" fxLayout="column" fxLayoutAlign="center center">
+    <img src="/assets/img/icons/home/MedNeon-Logo-w.svg" alt="MedNeon-Logo.svg">
+    <p>MedNeon's experts are available to you for personalized care and peace of mind</p>
+  </div>
+  <div class="right-login" fxFlex="50">
+    <h2 class="text-center">Login</h2>
+    <form class="example-form" [formGroup]="loginForm" (ngSubmit)="loginsend(loginForm)">
+      <mat-form-field class="example-full-width">
+        <label for="">User Email</label>
+        <input matInput formControlName="useremail">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <label for="">Password</label>
+        <input matInput formControlName="password" type="password">
+      </mat-form-field>
+      <p class="error" *ngIf="errorLogin">Invalid User Email or Password {{failAttemps}}</p>
+      <p class="error" *ngIf="userBlocked">Account is locked</p>
+      <p>
+        <a (click)="forgotPassword()">Forgot Password?</a>
+      </p>
+      <button class="btn">Submit</button>
+    </form>
+  </div>
+</div>

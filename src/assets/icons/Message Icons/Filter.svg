@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="20px" viewBox="0 0 16 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Fill 2298 + Fill 2299</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Risk-Assessment-Process" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="17.-Message-filters" transform="translate(-928.000000, -101.000000)" fill="#14B8A7">
+            <g id="Group-2" transform="translate(80.000000, 86.000000)">
+                <g id="Fill-2298-+-Fill-2299" transform="translate(848.000000, 15.000000)">
+                    <path d="M14,0 L2,0 C0.897,0 0,0.898 0,2 L16,2 C16,0.898 15.103,0 14,0" id="Fill-2298"></path>
+                    <path d="M0,3 L0,5 C0,5.256 0.098,5.512 0.293,5.707 L6,11.414 L6,19 C6,19.404 6.244,19.769 6.617,19.924 C6.741,19.975 6.871,20 7,20 C7.26,20 7.516,19.898 7.707,19.707 L9.707,17.707 C9.894,17.52 10,17.265 10,17 L10,11.414 L15.707,5.707 C15.902,5.512 16,5.256 16,5 L16,3 L0,3 Z" id="Fill-2299"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

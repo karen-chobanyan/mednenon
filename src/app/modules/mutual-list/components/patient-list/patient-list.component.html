@@ -1,0 +1,58 @@
+<div class="patient-list" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">
+  <div class="patient-l">
+    <app-dashboard-menu></app-dashboard-menu>
+  </div>
+
+  <div class="patient-r" fxFlex="100" fxLayout="row" fxLayout.xs="column" fxLayout.sm="column">
+    <div class="list-home mat-elevation-z2" fxFlex="25">
+      <div class="list-filter">
+        <h3 fxFlex="70">My Patients</h3>
+        <span *ngIf="!showFilters" (click)="showFilters=true" class="list-span text-right" fxFlex="30">filters</span>
+        <span *ngIf="showFilters" (click)="showFilters=false" class="list-span text-right" fxFlex="30">hide</span>
+      </div>
+
+      <div *ngIf="userType=='advocate' || userType=='adminAdvocate' && showFilters">
+          <select  fxFlex="100" (change)="filterChanged($event)" [(ngModel)]="vendor"  >
+              <option value="" disabled selected>Filter by vendor</option>
+              <option value="{{vendor.VendorID}}" *ngFor="let vendor of vendors" >
+                {{vendor.CompanyName}}
+              </option>
+          </select>
+      </div>
+      <div *ngIf="showFilters">
+
+        <select fxFlex="100" (change)="filterChanged($event)" [(ngModel)]="status" >
+          <option value="" disabled selected>Filter by status</option>
+          <option *ngIf="userType=='advocate' || userType=='adminAdvocate'" value ="" >Pending Expert Assignment</option><option *ngIf="userType=='advocate' || userType=='adminAdvocate'" value ="" >Experts Assigned</option>
+          <option *ngIf="userType=='expert'" value ="" >Pending Acceptance</option><option *ngIf="userType=='expert'" value ="" >Accepted Patients</option>
+          <option *ngIf="userType=='vendor'" value ="" >Patient Submitted</option><option *ngIf="userType=='vendor'"  value ="" >Patient Assigned</option>
+        </select>
+
+      </div>
+
+      <div>
+
+        <input fxFlex="100" matInput class="example-full-width" (input)="modelChanged($event)" placeholder="search by name or mrn">
+      </div>
+      <div *ngFor="let patient of filterPatientList" class="data-patients">
+        <a [routerLink]="'/patient-list/'+patient.PatientID" [ngClass]="status ? 'Advocate' : 'Expert'">
+          <div class="list-block" fxLayout="row">
+            <img src="{{patient.UserProfilePicture}}" default="/assets/img/patient.png" alt="">
+            <div>
+              <h5>{{patient.FirstName}} {{patient.LastName}}
+                <img src="/assets/img/icons/Selected.svg" alt="">
+              </h5>
+              <p>{{patient.PatientMRN}}</p>
+              <p>STATUS: {{patient.Status || "NA"}}</p>
+              <p>{{patient.City}}</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="select-patient" fxFlex="75">
+      <app-patient-screen></app-patient-screen>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="25px" viewBox="0 0 30 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Risk-Assessment-Process" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="XX1.-Patient-–-PHR" transform="translate(-16.000000, -26.000000)">
+            <g id="Group-4">
+                <g id="Group" transform="translate(16.000000, 26.000000)">
+                    <g id="Rectangle" transform="translate(0.000000, 1.587702)" fill="#FFFFFF" fill-rule="nonzero">
+                        <polygon id="Shape" points="5.88606983 0.193614927 11.7721916 0.193614927 5.88606983 20.9757302 0 20.9757302"></polygon>
+                    </g>
+                    <g id="Rectangle_2" transform="translate(11.425934, 1.587702)" fill="#FFFFFF" fill-rule="nonzero">
+                        <polygon id="Shape" points="6.23232756 0.193614927 12.1184493 0.193614927 6.23232756 20.9757302 0.346257732 20.9757302"></polygon>
+                    </g>
+                    <g id="Rectangle_3" transform="translate(5.712967, 1.587702)" fill="#FFFFFF" fill-rule="nonzero">
+                        <polygon id="Shape" points="0.173102898 0.193614927 6.05917273 0.193614927 11.9452945 20.9757302 6.05917273 20.9757302"></polygon>
+                    </g>
+                    <g id="Rectangle-(Stroke)" transform="translate(3.116164, 0.000000)" fill="#D66D75">
+                        <path d="M0.42891917,0 L9.98795931,0 L16.8830949,24.344759 L7.32405477,24.344759 L0.42891917,0 Z M2.76992682,1.7813219 L8.65600704,22.5634107 L14.5420769,22.5634107 L8.65600704,1.7813219 L2.76992682,1.7813219 Z" id="Shape"></path>
+                    </g>
+                    <g id="Rectangle_4" transform="translate(17.658261, 1.587702)" fill="#FFFFFF" fill-rule="nonzero">
+                        <polygon id="Shape" points="0 0.193614927 5.88606983 0.193614927 11.7721916 20.9757302 5.88606983 20.9757302"></polygon>
+                    </g>
+                    <g id="Rectangle-(Stroke)_2" transform="translate(15.061458, 0.000000)" fill="#D66D75">
+                        <path d="M0.25578511,0 L9.81482525,0 L14.0332094,17.6206763 L14.0332094,24.344759 L7.15092071,24.344759 L0.25578511,0 Z M2.59679276,1.7813219 L8.48287298,22.5634107 L14.3689428,22.5634107 L8.48287298,1.7813219 L2.59679276,1.7813219 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

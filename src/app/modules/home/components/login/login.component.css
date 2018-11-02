@@ -1,0 +1,114 @@
+.login-page {
+    position: relative;
+}
+.login-page .left-login{
+    background: linear-gradient(to bottom, #e26b76 0%, #ec8f87 100%);
+    margin-right: 0 !important;
+}
+.example-full-width {
+    width: 100%;
+}
+.close{
+    position: absolute;
+    z-index: 99;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    right: 35px;
+    top: 20px;
+}
+.example-form {
+    min-width: 150px;
+    max-width: 600px;
+    padding: 0 15px;
+    margin: auto;
+    width: 100%;
+}
+.login-page ::ng-deep .mat-form-field-appearance-legacy .mat-form-field-underline{
+    height: 0 !important;
+}
+.login-page ::ng-deep .mat-form-field.mat-form-field-invalid .mat-form-field-ripple,
+.mat-form-field.mat-form-field-invalid .mat-form-field-ripple.mat-accent{
+    background: transparent !important;
+}
+.login-page ::ng-deep .mat-form-field-appearance-legacy .mat-form-field-ripple{
+    height: 0 !important;
+}
+::ng-deep .mat-form-field-invalid .mat-input-element, 
+::ng-deep .mat-warn .mat-input-element{
+    border: 1px solid red !important;
+}
+.login-page .left-login p{
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+    width: 80%;
+}
+.login-page .right-login label{
+    color: #7e7e7e;
+    padding-bottom: 12px;
+}
+.login-page .right-login{
+    padding: 20% 0 50px;
+    background: #fff;
+}
+.login-page .right-login h2{
+    font-size: 35px;
+    color: #7e7e7e;
+    letter-spacing: 5px;
+    font-family: LatoLight;
+}
+.login-page .right-login input{
+  border: 1px solid #dadcdf;
+  border-radius: 3px;
+  padding: 8px 6px;
+  font-size: 16px;
+  margin-top: 7px;
+}
+.login-page .right-login button{
+    font-weight: 600;
+    margin-top: 45px;
+    width: 100%;
+}
+.login-page .right-login p{
+    text-align: right;
+    margin-top: 0;
+}
+.login-page .right-login p a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #7e7e7e;
+}
+.error{
+    text-align: center !important;
+    color: red;
+    margin: 0;
+}
+
+@media only screen and (max-width: 960px) {
+    .login-page .left-login{
+      padding:15% 0; 
+      margin-bottom: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .login-page .left-login p{
+        padding: 0 15px;
+        font-size: 15px;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 414px) {
+    .login-page .right-login button{
+        margin-top: 0;
+
+    }
+    .login-page .right-login{
+        padding: 0;
+    }
+    .login-page .right-login h2{
+        margin: 0;
+        margin-top: 15px;
+    }
+}
